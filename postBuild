@@ -9,3 +9,7 @@ code-server --install-extension ms-python.python
 
 # Install the VS code proxy
 pip install -e.
+
+git clone https://github.com/Center-for-Health-Data-Science/PythonTsunami
+
+conda env update --file PythonTsunami/environment.yml

@@ -4,3 +4,10 @@ dependencies:
   - numpy
   - jupyter-server-proxy
   - code-server >=3.2
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - seaborn
+  - plotly
+  - bs4
+  - rise
