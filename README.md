@@ -25,6 +25,13 @@ Start:
 - [git-moji](https://gitmoji.dev/)
 - Videos: [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU), [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
+## Inspect git objects
+
+```bash
+git log --format=raw
+git cat-file -p <hash> # pretty print
+git cat-file -t <hash> # type
+```
 
 ## Note
 
