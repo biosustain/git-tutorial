@@ -7,6 +7,7 @@ jupyter lab build
 
 code-server --install-extension ms-python.python
 
+pip install jupyterlab-git
 # Install the VS code proxy
 pip install -e.
 

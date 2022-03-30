@@ -8,7 +8,7 @@
 
 Start:
  - lab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RasmussenLab/git-tutorial/master?urlpath=lab)
- - vscode: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RasmussenLab/git-tutorial/master?urlpath=vscode)
+ - vscode: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RasmussenLab/git-tutorial/master?urlpath=vscode?folder=/home/jovyan/examples)
 
 
 ## Explore
@@ -20,14 +20,19 @@ You will need to setup your git email and user-name
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ``` 
-> could be added to local config
+> could be added to local config using `git config user...`
 
-- create a folder with an empty repository
+### Steps
+
+- create a folder with an empty repository (default `examples`)
+- `git init` in console to initialize repo
 - setup user.name and user.email
-- create branches
-- etc
+- create files, stage them and see what files are created in `.git/objects`
+- commit files and check `.git/objects`
+- create branches and checkout `.git/refs` and `git/branches` folder
+- look at `git/HEAD` (maybe `git/ORIG_HEAD` if it exists)
 
-> try to add notes to your own fork
+> try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
 
 ## Links
 
