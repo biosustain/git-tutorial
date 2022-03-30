@@ -13,6 +13,15 @@ Start:
 
 ## Explore
 
+You will need to setup your git email and user-name
+(replace with yours in case you want to commit something, otherwise use copy-paste)
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+``` 
+> could be added to local config
+
 - create a folder with an empty repository
 - setup user.name and user.email
 - create branches
@@ -31,6 +40,10 @@ Start:
 git log --format=raw
 git cat-file -p <hash> # pretty print
 git cat-file -t <hash> # type
+
+# the binary object can also be inspected using different tools,
+# which might make it easier to navigate to certain blobs:
+cat .git/objects/<2c>/<38c> | zlib-flate -uncompress
 ```
 
 ## Note
