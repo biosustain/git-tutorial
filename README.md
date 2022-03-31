@@ -37,7 +37,12 @@ git config --global user.name "Your Name"
 ## Links
 
 - [git-moji](https://gitmoji.dev/)
-- Videos: [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU), [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4)
+- [curious git](https://matthew-brett.github.io/curious-git/) - detailed intro to the inner workings
+- [git parable](http://practical-neuroimaging.github.io/git_parable.html) - why git came to exist
+- Videos: 
+    - [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU)
+    - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4)
+    - [Git PyData Global 2021 talk](https://www.youtube.com/watch?v=rBYC3dEOOyI)
 
 ## Inspect git objects
 
