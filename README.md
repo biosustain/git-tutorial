@@ -24,12 +24,14 @@ git config --global user.name "Your Name"
 
 ### Steps
 
-- create a folder with an empty repository (default `examples`)
-- `git init` in console to initialize repo
-- setup user.name and user.email
+- create a folder with an empty repository (default `examples`
+  directly openend in VSCode on binder)
+- open instruction: `code-server ../README.md` (local computer: `code ../README.md`)
+- `git init` in console to initialize repo (or via command palette "Git: Initialize Repository")
+- setup user.name and user.email (see above)
 - create files, stage them and see what files are created in `.git/objects`
 - commit files and check `.git/objects`
-- create branches and checkout `.git/refs` and `git/branches` folder
+- create branches and checkout `.git/refs` (`git/branches` is a legacy folder,see [here](https://stackoverflow.com/a/10398507/9684872))
 - look at `git/HEAD` (maybe `git/ORIG_HEAD` if it exists)
 
 > try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
@@ -41,8 +43,10 @@ git config --global user.name "Your Name"
 - [git parable](http://practical-neuroimaging.github.io/git_parable.html) - why git came to exist
 - Videos: 
     - [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU)
-    - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4)
+    - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4) - shows how git works
     - [Git PyData Global 2021 talk](https://www.youtube.com/watch?v=rBYC3dEOOyI)
+    - Scoot Chacon’s [“So you thin you know git” talk](https://www.youtube.com/watch?v=aolI_Rz0ZqY) (FOSDEM 2024), 
+    notes on [blog](https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/) 
 
 ## Inspect git objects
 
@@ -55,6 +59,26 @@ git cat-file -t <hash> # type
 # which might make it easier to navigate to certain blobs:
 cat .git/objects/<2c>/<38c> | zlib-flate -uncompress
 ```
+
+You can find the latest objects and compare it to the log
+
+```bash
+find .git/objects  -type f -exec ls -lt {} + | head -n 10
+git log --format=raw -n 3
+```
+
+If you wonder what the codes in a tree mean, check this stackexchange
+[answer](https://unix.stackexchange.com/a/450488/349761)
+
+```bash
+
+## What's happening?
+
+- You commited ten commits and dit not yet push. Git complains about too much data.
+  You realize that you commited your source data. You delete it and commit again, but the problem still persists.
+- You commit something and push. You realize your last commit was wrong. You undo it and commit again. Git complains that 
+  you cannot push.
+
 
 ## Note
 
