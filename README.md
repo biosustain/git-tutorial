@@ -77,13 +77,3 @@ If you wonder what the codes in a tree mean, check this stackexchange
   You realize that you commited your source data. You delete it and commit again, but the problem still persists.
 - You commit something and push. You realize your last commit was wrong. You undo it and commit again. Git complains that 
   you cannot push.
-
-
-## Note
-
-> Should be Run the Python Tsunami notebooks on binder.
-?urlpath=vscode/?folder
-Go directly to Python Tsunami repository in
- - VSCode [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosustain/git-tutorial/master?urlpath=vscode/?folder=/home/jovyan/PythonTsunami)
- - JupyterLab [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosustain/git-tutorial/master?urlpath=lab/tree/PythonTsunami)
- - Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosustain/git-tutorial/master?urlpath=tree/PythonTsunami)
