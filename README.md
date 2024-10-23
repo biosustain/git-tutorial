@@ -70,7 +70,6 @@ git log --format=raw -n 3
 If you wonder what the codes in a tree mean, check this stackexchange
 [answer](https://unix.stackexchange.com/a/450488/349761)
 
-```bash
 
 ## What's happening?
 
