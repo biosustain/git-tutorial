@@ -36,6 +36,16 @@ git config --global user.name "Your Name"
 
 > try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
 
+You can find a recording of the tutorial on YouTube which was done for the Data Club seminar
+between DTU biosustain and DTU bioengineering (see sections in description of Video).
+
+[![YouTube Preview](https://img.youtube.com/vi/5iB7qc5zRjQ/maxresdefault.jpg
+)](https://www.youtube.com/watch?v=5iB7qc5zRjQ)
+
+> The Live Demo is not pulling the merge commit after merging the branch on GitHub.
+> Maybe this could be a possible small follow-up where the repository could be cloned 
+> from GitHub: [github.com/biosustain/git_training_henry_recording](https://github.com/biosustain/git_training_henry_recording)
+
 ## Links
 
 - [git-moji](https://gitmoji.dev/)
