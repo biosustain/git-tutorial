@@ -36,9 +36,18 @@ git config --global user.name "Your Name"
 
 > try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
 
-You can find a recording of the tutorial on YouTube which was done for the Data Club seminar
+You can find a recording of the 
+[talk](https://www.youtube.com/watch?v=cAU3BCUkHxM)
+([slides](https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/edit?usp=sharing)) 
+and [hands-on tutorial](https://www.youtube.com/watch?v=5iB7qc5zRjQ) 
+on YouTube which was done for the Data Club seminar
 between DTU biosustain and DTU bioengineering (see sections in description of Video).
 
+Talk:
+[![YouTube Preview](https://img.youtube.com/vi/cAU3BCUkHxM/maxresdefault.jpg
+)](https://www.youtube.com/watch?v=cAU3BCUkHxM)
+
+Live Demo:
 [![YouTube Preview](https://img.youtube.com/vi/5iB7qc5zRjQ/maxresdefault.jpg
 )](https://www.youtube.com/watch?v=5iB7qc5zRjQ)
 
