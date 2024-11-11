@@ -44,16 +44,21 @@ on YouTube which was done for the Data Club seminar
 between DTU biosustain and DTU bioengineering (see sections in description of Video).
 
 Talk:
-[![YouTube Preview](https://img.youtube.com/vi/cAU3BCUkHxM/maxresdefault.jpg
+[![Recording of talk](https://img.youtube.com/vi/cAU3BCUkHxM/maxresdefault.jpg
 )](https://www.youtube.com/watch?v=cAU3BCUkHxM)
 
 Live Demo:
-[![YouTube Preview](https://img.youtube.com/vi/5iB7qc5zRjQ/maxresdefault.jpg
+[![Live Demo of Hands On part](https://img.youtube.com/vi/5iB7qc5zRjQ/maxresdefault.jpg
 )](https://www.youtube.com/watch?v=5iB7qc5zRjQ)
 
-> The Live Demo is not pulling the merge commit after merging the branch on GitHub.
-> Maybe this could be a possible small follow-up where the repository could be cloned 
-> from GitHub: [github.com/biosustain/git_training_henry_recording](https://github.com/biosustain/git_training_henry_recording)
+The above Live Demo is not pulling the merge commit after merging the branch on GitHub:
+[github.com/biosustain/git_training_henry_recording](https://github.com/biosustain/git_training_henry_recording)
+
+I show the merge commit in the video below, cloining the recording repository in a newly
+create VSCode sandbox environment above:
+
+[![Live Demo Hand on Addon](https://img.youtube.com/vi/gcfzruIJ-rw/sddefault.jpg
+)](https://www.youtube.com/watch?v=gcfzruIJ-rw)
 
 ## Links
 
