@@ -4,7 +4,8 @@
 
 ## Plan
 
-- Introduction to git (slides), see recording here
+- Introduction to git ([slides](https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/edit?usp=sharing)),
+  see recording [here](https://www.youtube.com/watch?v=5iB7qc5zRjQ)
 - Hands-on, focusing this time on
     - working on a shared repository (per group, i.e. e.g. per table)
     - creating and merging branches
@@ -42,6 +43,9 @@ to your local machine.
 
 Each of you create a branch, e.g. give it your name. Add a brief description of what you 
 are passionate about in a file called `aboutme.md` in a folder with your name.
+
+- do this first in your local version of the repository
+- decide if you want to create a fork or add collaborators to your repository
 
 ### 4. step - merge the branches to the main branch
 
