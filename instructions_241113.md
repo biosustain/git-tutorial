@@ -48,8 +48,9 @@ are passionate about in a file called `aboutme.md` in a folder with your name.
 
 In order to commit this to the GitHub repository you have to do one of the two options:
 
-- add all collaborators of your group to the repository (write access)
-- create a fork on your GitHub account
+- [add all collaborators](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository#inviting-a-collaborator-to-a-personal-repository)
+  of your group to the repository (write access)
+- create a fork on your GitHub account (you will be asked in VSCode if you want to do this)
 
 You can also mix both approaches in your group to find out about the differences.
 
