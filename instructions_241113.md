@@ -51,6 +51,11 @@ In order to commit this to the GitHub repository you have to do one of the two o
 - add all collaborators of your group to the repository (write access)
 - create a fork on your GitHub account
 
+You can also mix both approaches in your group to find out about the differences.
+
+> You can see how to commit changed files [here](https://www.youtube.com/watch?v=XolIezJtSPI&t=938s)
+> (in one part of the notes template hands on recording)
+
 ### 4. step - merge the branches to the main branch
 
 On GitHub open a pull request to merge your branch to the main branch. We will explore 
@@ -62,7 +67,7 @@ together some features of the pull request website.
 
 ### 5. step - view and annotate the collaborative work
 
-Switch back to the `main` branch and get all the latest changes from your coworkers. 
+Switch back to the `main` branch and get all the latest changes from your coworkers (pull). 
 Now, each create (again) a new branch (pick a unique new name) and create a the file name `biosustain.md`. 
 In this file write a about what you think biosustain is about.
 
@@ -71,6 +76,9 @@ In this file write a about what you think biosustain is about.
 The first pull request will work fine. Everyone else has to deal with merge conflicts, as 
 the same named file will be overwritten - and there is no clear way to say which version 
 is the correct one or how to combine you changes.
+
+- Hint: In your CodeSpace make sure to checkout the latest changes from the main branch 
+  before creating a new branch (pull on main).
 
 ### 7. step - merge conflicts
 
