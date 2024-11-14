@@ -87,3 +87,9 @@ is the correct one or how to combine you changes.
 
 We will explore how to resolve merge conflicts in VSCode's UI. This is advanced and 
 you don't have to do this for now.
+
+## Follow up recording
+
+[![Live Demo of Hands On part](https://img.youtube.com/vi/mX3Il5xvKAs/maxresdefault.jpg
+)](https://www.youtube.com/watch?v=mX3Il5xvKAs)
+
