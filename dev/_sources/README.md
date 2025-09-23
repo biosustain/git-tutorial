@@ -1,7 +1,5 @@
 # Git Tutorial
 
-Open in Codespace...
-
 ## Announcement
 
 This workshop will give you the opportunity to practice git as a version control system
