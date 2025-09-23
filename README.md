@@ -13,7 +13,8 @@ GitHub Codespaces or in using the GitHub web interface. If you want, you can als
 everything on your local computer.
  
 I will give a brief introduction to git to then team you up to practice certain workflows.
-You will collaboratively work on creating a recipe book. You will learn how to work on 
+You will collaboratively work on extending a 
+[recipe book](https://enryh.github.io/recipe-book/). You will learn how to work on 
 branches, Review Pull Requests and merge them into the main branch.
 
 If you have specific requests, feel free to reach out to me. 
