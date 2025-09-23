@@ -62,6 +62,7 @@ create VSCode sandbox environment above:
 
 ## Links
 
+- [git-intro by coderefinery](https://coderefinery.github.io/git-intro/#)
 - [git-moji](https://gitmoji.dev/)
 - [curious git](https://matthew-brett.github.io/curious-git/) - detailed intro to the inner workings
 - [git parable](http://practical-neuroimaging.github.io/git_parable.html) - why git came to exist
@@ -70,7 +71,10 @@ create VSCode sandbox environment above:
     - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4) - shows how git works
     - [Git PyData Global 2021 talk](https://www.youtube.com/watch?v=rBYC3dEOOyI)
     - Scoot Chacon’s [“So you thin you know git” talk](https://www.youtube.com/watch?v=aolI_Rz0ZqY) (FOSDEM 2024), 
-    notes on [blog](https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/) 
+    notes on [blog](https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/)
+- [Git Internals - Plumbing and Porcelain](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+- [Glossary of terms (technical for git)](https://www.git-scm.com/docs/gitglossary)
+- [GitHub Glossary terms](https://docs.github.com/en/get-started/learning-about-github/github-glossary)
 
 ## Inspect git objects
 
