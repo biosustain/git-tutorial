@@ -87,7 +87,7 @@ html_theme_options = {
     "github_url": "https://github.com/biosustain/git-tutorial",
     "repository_url": "https://github.com/biosustain/git-tutorial",
     # "repository_branch": "main",
-    # "home_page_in_toc": True,
+    "home_page_in_toc": True,
     # "path_to_docs": "docs",
     "show_navbar_depth": 1,
     # "use_edit_page_button": True,
