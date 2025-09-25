@@ -1,17 +1,40 @@
-# Git Tutorial using
+# Git Tutorial
 
-> VS Code on Binder  
-> VS Code on Binder, because sometimes you need a real editor.  
+## Announcement
 
-[![PyPI](https://img.shields.io/pypi/v/jupyter-vscode-proxy)](https://pypi.org/project/jupyter-vscode-proxy/)
-[![Install with conda](https://img.shields.io/conda/vn/conda-forge/jupyter-vscode-proxy.svg)](https://github.com/conda-forge/jupyter-vscode-proxy-feedstock)
+This workshop will give you the opportunity to practice git as a version control system
+and Github as a website to host your repositories. Using git you can track changes in 
+folders. It allows you track your progress and to spot random typos when working on
+many projects and tasks in parallel. In the workshop you will get the time to practice 
+the fundamental concepts and actions directly in your browser - either using VSCode in
+GitHub Codespaces or in using the GitHub web interface. If you want, you can also try 
+everything on your local computer.
 
-Start:
- - lab: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosustain/git-tutorial/master?urlpath=lab)
- - vscode: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biosustain/git-tutorial/master?urlpath=vscode?folder=/home/jovyan/examples)
+I will give a brief introduction to git. Then you will specific workflows by 
+collaboratively work on extending a [recipe book](https://enryh.github.io/recipe-book/).
+You will learn how to work on 
+[branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches), 
+review [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) 
+and merge them into the main branch. If you have specific requests, feel free to reach out to me. 
+
+If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk). 
+
+What you'll learn:
+- Basic tasks and actions to perform with git (in VSCode or in the browser)
+- How to branch and tag
+- Follow trunk-based development
+- See how to merge and comment a Pull Request based on a branch
+- Solve merge conflicts
+- Familiarize yourself with VSCode’s and GitHub’s interface and user experience
+- Get to know new recipes
+ 
+Minimal prerequisite: A [GitHub account](https://github.com/signup). 
+If you want to follow along locally, please install 
+[GitHub Desktop](https://desktop.github.com/download/) and 
+[VSCode](https://code.visualstudio.com/) on your machine.
 
 
-## Explore
+## Explore locally
 
 You will need to setup your git email and user-name
 (replace with yours in case you want to commit something, otherwise use copy-paste)
@@ -22,19 +45,19 @@ git config --global user.name "Your Name"
 ``` 
 > could be added to local config using `git config user...`
 
-### Steps
 
-- create a folder with an empty repository (default `examples`
-  directly openend in VSCode on binder)
-- open instruction: `code-server ../README.md` (local computer: `code ../README.md`)
-- `git init` in console to initialize repo (or via command palette "Git: Initialize Repository")
-- setup user.name and user.email (see above)
-- create files, stage them and see what files are created in `.git/objects`
-- commit files and check `.git/objects`
-- create branches and checkout `.git/refs` (`git/branches` is a legacy folder,see [here](https://stackoverflow.com/a/10398507/9684872))
-- look at `git/HEAD` (maybe `git/ORIG_HEAD` if it exists)
+## Links to learn more
 
-> try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
+- [git-intro by coderefinery](https://coderefinery.github.io/git-intro/#)
+- [git-moji](https://gitmoji.dev/)
+- [Git Internals - Plumbing and Porcelain](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)
+- [Glossary of terms (technical for git)](https://www.git-scm.com/docs/gitglossary)
+- [GitHub Glossary terms](https://docs.github.com/en/get-started/learning-about-github/github-glossary)
+
+
+## Git under the hood (Extended version)
+
+> Extended content for those interested in how git works under the hood
 
 You can find a recording of the 
 [talk](https://www.youtube.com/watch?v=cAU3BCUkHxM)
@@ -60,19 +83,23 @@ create VSCode sandbox environment above:
 [![Live Demo Hand on Addon](https://img.youtube.com/vi/gcfzruIJ-rw/sddefault.jpg
 )](https://www.youtube.com/watch?v=gcfzruIJ-rw)
 
-## Links
 
-- [git-moji](https://gitmoji.dev/)
-- [curious git](https://matthew-brett.github.io/curious-git/) - detailed intro to the inner workings
-- [git parable](http://practical-neuroimaging.github.io/git_parable.html) - why git came to exist
-- Videos: 
-    - [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU)
-    - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4) - shows how git works
-    - [Git PyData Global 2021 talk](https://www.youtube.com/watch?v=rBYC3dEOOyI)
-    - Scoot Chacon’s [“So you thin you know git” talk](https://www.youtube.com/watch?v=aolI_Rz0ZqY) (FOSDEM 2024), 
-    notes on [blog](https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/) 
+### Instructions
 
-## Inspect git objects
+- create a folder with an empty repository (default `examples`
+  directly openend in VSCode on binder)
+- open instruction: `code-server ../README.md` (local computer: `code ../README.md`)
+- `git init` in console to initialize repo (or via command palette "Git: Initialize Repository")
+- setup user.name and user.email (see above)
+- create files, stage them and see what files are created in `.git/objects`
+- commit files and check `.git/objects`
+- create branches and checkout `.git/refs` (`git/branches` is a legacy folder,see 
+  [here](https://stackoverflow.com/a/10398507/9684872))
+- look at `git/HEAD` (maybe `git/ORIG_HEAD` if it exists)
+
+> try to create your own fork, and try to lauch it on [mybinder](https://mybinder.org/)
+
+### Inspect git objects
 
 ```bash
 git log --format=raw
@@ -95,9 +122,24 @@ If you wonder what the codes in a tree mean, check this stackexchange
 [answer](https://unix.stackexchange.com/a/450488/349761)
 
 
-## What's happening?
+### What's happening?
 
-- You commited ten commits and dit not yet push. Git complains about too much data.
-  You realize that you commited your source data. You delete it and commit again, but the problem still persists.
-- You commit something and push. You realize your last commit was wrong. You undo it and commit again. Git complains that 
-  you cannot push.
+Can you explain what happens in the following scenarios?
+
+- You committed ten commits and did not yet push. Git complains about too much data.
+  You realize that you committed your source data. You delete it and commit again, 
+  but the problem still persists.
+- You commit something and push. You realize your last commit was wrong. You undo it
+  and commit again. Git complains that you cannot push.
+
+### Git internals resources
+
+- [curious git](https://matthew-brett.github.io/curious-git/) - detailed intro to the
+  inner workings
+- [git parable](http://practical-neuroimaging.github.io/git_parable.html) - why git came to exist
+- Videos:
+    - [Python-Git-Client](https://www.youtube.com/watch?v=xvzo_nV9PjU)
+    - [Git-Interals](https://www.youtube.com/watch?v=MYP56QJpDr4) - shows how git works
+    - [Git PyData Global 2021 talk](https://www.youtube.com/watch?v=rBYC3dEOOyI)
+    - Scoot Chacon’s [“So you thin you know git” talk](https://www.youtube.com/watch?v=aolI_Rz0ZqY) (FOSDEM 2024), 
+    notes on [blog](https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/)
