@@ -9,16 +9,18 @@ many projects and tasks in parallel. In the workshop you will get the time to pr
 the fundamental concepts and actions directly in your browser - either using VSCode in
 GitHub Codespaces or in using the GitHub web interface. If you want, you can also try 
 everything on your local computer.
- 
-I will give a brief introduction to git to then team you up to practice certain workflows.
-You will collaboratively work on extending a 
-[recipe book](https://enryh.github.io/recipe-book/). You will learn how to work on 
-branches, Review Pull Requests and merge them into the main branch.
 
-If you have specific requests, feel free to reach out to me. 
+I will give a brief introduction to git. Then you will specific workflows by 
+collaboratively work on extending a [recipe book](https://enryh.github.io/recipe-book/).
+You will learn how to work on 
+[branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches), 
+review [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) 
+and merge them into the main branch. If you have specific requests, feel free to reach out to me. 
+
+If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk). 
 
 What you'll learn:
-- Basic tasks and actions to perform with git (in VSCode)
+- Basic tasks and actions to perform with git (in VSCode or in the browser)
 - How to branch and tag
 - Follow trunk-based development
 - See how to merge and comment a Pull Request based on a branch
