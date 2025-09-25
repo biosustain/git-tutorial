@@ -14,13 +14,14 @@ GitHub Codespaces or in using the GitHub web interface. If you want, you can als
 everything on your local computer.
 
 I will give a brief introduction to git. Then you will specific workflows by 
-collaboratively work on extending a [recipe book](https://enryh.github.io/recipe-book/).
+collaboratively work on extending a [recipe book](https://enryh.github.io/recipe-book/)
+(please bring a recipe you like).
 You will learn how to work on 
 [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches), 
 review [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) 
 and merge them into the main branch. If you have specific requests, feel free to reach out to me. 
 
-If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk). 
+If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk) and/or write it down in the sign-up form.
 
 What you'll learn:
 - Basic tasks and actions to perform with git (in VSCode or in the browser)
