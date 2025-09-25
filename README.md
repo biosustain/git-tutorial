@@ -1,5 +1,8 @@
 # Git Tutorial
 
+Sign-Up to the workshop here (being logged in with your DTU Microsoft account): [Sign-Up Form](
+https://forms.office.com/e/62H1nV61R0)
+
 ## Announcement
 
 This workshop will give you the opportunity to practice git as a version control system
@@ -33,6 +36,15 @@ If you want to follow along locally, please install
 [GitHub Desktop](https://desktop.github.com/download/) and 
 [VSCode](https://code.visualstudio.com/) on your machine.
 
+### Brief timeline of the workshop:
+
+| Time          | Activity                                     |
+|---------------|----------------------------------------------|
+| 10:00 - 10:15 | Coffee and snacks 🥐                         |
+| 10:15 - 10:45 | Introduction and example workflow            |
+| 10:45 - 12:00 | Working collaboratively on the recipe book   |
+| 12:00 - 12:30 | lunch break (not included)                   |
+| 12:30 - 13:30 | Your question and advanced content           |
 
 ## Explore locally
 
