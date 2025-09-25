@@ -2,6 +2,8 @@
 
 .. at DTU biosustain and DTU bioengineering.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=874029589&skip_quickstart=true)
+
 ## Plan
 
 - Introduction to git ([slides](https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/edit?usp=sharing)),
