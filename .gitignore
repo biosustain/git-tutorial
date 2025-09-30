@@ -1,3 +1,23 @@
+# Byte-compiled Python files
+__pycache__/
+
+# data
+*.csv
+*.json
+*.parquet
+
+# C extensions
+*.so
+
+# Mac OS
+.DS_Store
+*/.DS_Store
+
+# Distribution / packaging
+dist/
+eggs/
+
+
 .npm
 .yarn
 .cache
