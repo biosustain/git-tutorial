@@ -61,6 +61,9 @@ webkitallowfullscreen="true">
 </iframe>
 
 
+## Local Setup
+
+See [local_setup](local_setup.md) for instructions to setup git on your local computer.
 
 ## Links to learn more
 
