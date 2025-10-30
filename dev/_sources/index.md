@@ -1,6 +1,6 @@
 ```{include} README.md
-```
 
+```
 
 ```{toctree}
 :maxdepth: 1
@@ -11,7 +11,7 @@ instructions_251105
 
 use_cases
 local_setup
-
+receipe_book
 ```
 
 ```{toctree}

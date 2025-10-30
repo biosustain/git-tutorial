@@ -19,16 +19,17 @@ You need to be logged in to GitHub and have a GitHub account.
 
 - [github.dev/enryH/recipe-book (Editor)](https://github.dev/enryH/recipe-book)
 - [github.com/enryH/recipe-book (Website)](https://github.com/enryH/recipe-book)
+
 ### In GitHub Workspace
 
-- Open in GitHub Codespace if you want to build and preview the website without 
+- Open in GitHub Codespace if you want to build and preview the website without
   creating a commit:
 
   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1053356553&skip_quickstart=true)
 
 ### On local computer
 
-Install both an editor, e.g. [VSCode](https://code.visualstudio.com/download) (recommended), 
+Install both an editor, e.g. [VSCode](https://code.visualstudio.com/download) (recommended),
 and the command line program [git](https://git-scm.com/install/)
 
 ## Exercises
@@ -37,17 +38,17 @@ Choose your favrioute.
 
 ### Add your recipe and request a review [basic]
 
-> This I have to test with someone 
+> This I have to test with someone
 
-- [create a fork](https://github.com/enryH/recipe-book/fork) 
+- [create a fork](https://github.com/enryH/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
-- add and commit your recipe. The next two steps can be done either as first or 
+- add and commit your recipe. The next two steps can be done either as first or
   second, why?
   - create a branch with your new recipe, e.g. `add-aioli-pasta`
   - create a commit with your new recipe draft
 - open a Pull (Merge) Request on GitHub to `origin/main`
 - ask someone (by inviting them) to review your PR and get an approval
-  - I set-up the repo to require at least one approval before a merge is possible 
+  - I set-up the repo to require at least one approval before a merge is possible
     (best-practice)
 
 ### Create a merge conflict [medium]
@@ -59,15 +60,16 @@ Work simulatenously on the same files, writing new content to the same sections 
   - everyone after has to resolve merge conflicts as the changes are not easy to resolve
     automatically (draw out the graph to see why)
 
-
 How to merge:
-  - Open a GitHub PR, follow the instructions there 
-    (see [Web-Editor](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github))
-  - too large differences have to resolved locally, e.g. using the 
-    [VSCode Merge Editor](https://code.visualstudio.com/docs/sourcecontrol/overview). See 
-    [this tutorial](https://www.youtube.com/watch?v=HosPml1qkrg).
+
+- Open a GitHub PR, follow the instructions there
+  (see [Web-Editor](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github))
+- too large differences have to resolved locally, e.g. using the
+  [VSCode Merge Editor](https://code.visualstudio.com/docs/sourcecontrol/overview). See
+  [this tutorial](https://www.youtube.com/watch?v=HosPml1qkrg).
 
 How and when to integrate changes from the main branch?
+
 - setting in Repo to suggest to 'Update branch' (you need to own the repo)
 - merge in changes locally using `git merge`
 - leave it to git and create a 'merge commit' which has two parents
@@ -76,15 +78,15 @@ How and when to integrate changes from the main branch?
 
 ### Add and remove large files [advanced]
 
-GitHub set a limit of 100MB per file. It's a *best pratice* to only commit code and 
-documenation, and if needed small example datasets. Adding larger files than 100MB is 
+GitHub set a limit of 100MB per file. It's a _best pratice_ to only commit code and
+documenation, and if needed small example datasets. Adding larger files than 100MB is
 possible locally, but then the commit cannot be syncronized with the remote, hosted
 repository.
 
 - use a large file (e.g. these ones: )
 - commit them in a data folder
 - add a few more commits (loading the files or what else)
-- `rebase` to remove the files again, see 
+- `rebase` to remove the files again, see
   [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
   Options:
   - edit the commit where you added the large files and remove them
