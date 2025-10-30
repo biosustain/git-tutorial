@@ -11,6 +11,7 @@ instructions_251105
 
 use_cases
 local_setup
+receipe_book
 ```
 
 ```{toctree}
