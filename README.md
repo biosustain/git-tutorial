@@ -47,16 +47,19 @@ If you want to follow along locally, please install
 | 12:00 - 12:30 | lunch break (not included)                   |
 | 12:30 - 13:30 | Your question and advanced content           |
 
-## Explore locally
 
-You will need to setup your git email and user-name
-(replace with yours in case you want to commit something, otherwise use copy-paste)
+## Slides
 
-```bash
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-``` 
-> could be added to local config using `git config user...`
+
+<iframe 
+src="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/embed?slide=id.p#slide=id.p" 
+frameborder="0"
+width="100%" height="480" 
+allowfullscreen="true"
+ mozallowfullscreen="true" 
+webkitallowfullscreen="true">
+</iframe>
+
 
 
 ## Links to learn more
