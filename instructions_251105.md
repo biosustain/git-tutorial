@@ -17,8 +17,8 @@ You need to be logged in to GitHub and have a GitHub account for all these optio
 
 You need to be logged in to GitHub and have a GitHub account.
 
-- [github.dev/enryH/recipe-book](https://github.dev/enryH/recipe-book)
-
+- [github.dev/enryH/recipe-book (Editor)](https://github.dev/enryH/recipe-book)
+- [github.com/enryH/recipe-book (Website)](https://github.com/enryH/recipe-book)
 ### In GitHub Workspace
 
 - Open in GitHub Codespace if you want to build and preview the website without 
@@ -26,7 +26,7 @@ You need to be logged in to GitHub and have a GitHub account.
 
   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1053356553&skip_quickstart=true)
 
-### On local comoputer
+### On local computer
 
 Install both an editor, e.g. [VSCode](https://code.visualstudio.com/download) (recommended), 
 and the command line program [git](https://git-scm.com/install/)
@@ -39,7 +39,8 @@ Choose your favrioute.
 
 > This I have to test with someone 
 
-- create a fork or request access as collaborator of the the recipe-repo
+- [create a fork](https://github.com/enryH/recipe-book/fork) 
+  (or request access as collaborator of the the recipe-repo)
 - add and commit your recipe. The next two steps can be done either as first or 
   second, why?
   - create a branch with your new recipe, e.g. `add-aioli-pasta`

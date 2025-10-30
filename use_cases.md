@@ -2,8 +2,9 @@
 
 Two examples:
 
- - VueGen reporting tool
- - shared notes repository of Data Science Platform
+ - VueGen reporting tool - [VueGen repo](https://github.com/Multiomics-Analytics-Group/vuegen)
+ - shared notes repository of Data Science Platform - [DSP notes repo](https://github.com/biosustain/dsp_notes)
+ - publish analysis code and results ('code availability') - [not just another biomarker repo](https://github.com/RasmussenLab/njab)
 
 ## Keep track of changes locally
 
