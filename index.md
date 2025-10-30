@@ -5,7 +5,7 @@
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: 2025
+:caption: Basic introduction
 
 instructions_251105
 
@@ -17,7 +17,8 @@ receipe_book
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: 2024
+:caption: Advanced content
 
+advanced
 instructions_241113
 ```
