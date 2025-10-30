@@ -172,8 +172,16 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic introduction</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="instructions_251105.html">Workshop on the 5th of November 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use_cases.html">Use cases for git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_setup.html">Setup git locally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="receipe_book.html">Recipe Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced content</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Git under the hood</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instructions_241113.html">Workshop on the 13th of November 2024</a></li>
 </ul>
 
@@ -342,15 +350,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-timeline-of-the-workshop">Brief timeline of the workshop:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-locally">Explore locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slides">Slides</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">Local Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-to-learn-more">Links to learn more</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-under-the-hood-extended-version">Git under the hood (Extended version)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-git-objects">Inspect git objects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-happening">What’s happening?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-internals-resources">Git internals resources</a></li>
-</ul>
-</li>
 </ul>
             </nav>
         </div>
@@ -425,17 +427,20 @@ If you want to follow along locally, please install
 </div>
 </section>
 </section>
-<section id="explore-locally">
-<h2>Explore locally<a class="headerlink" href="#explore-locally" title="Link to this heading">#</a></h2>
-<p>You will need to setup your git email and user-name
-(replace with yours in case you want to commit something, otherwise use copy-paste)</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;you@example.com&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
-</pre></div>
-</div>
-<blockquote>
-<div><p>could be added to local config using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">user...</span></code></p>
-</div></blockquote>
+<section id="slides">
+<h2>Slides<a class="headerlink" href="#slides" title="Link to this heading">#</a></h2>
+<iframe 
+src="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/embed?slide=id.p#slide=id.p" 
+frameborder="0"
+width="100%" height="480" 
+allowfullscreen="true"
+mozallowfullscreen="true" 
+webkitallowfullscreen="true">
+</iframe>
+</section>
+<section id="local-setup">
+<h2>Local Setup<a class="headerlink" href="#local-setup" title="Link to this heading">#</a></h2>
+<p>See <a class="reference internal" href="local_setup.html"><span class="std std-doc">local_setup</span></a> for instructions to setup git on your local computer.</p>
 </section>
 <section id="links-to-learn-more">
 <h2>Links to learn more<a class="headerlink" href="#links-to-learn-more" title="Link to this heading">#</a></h2>
@@ -443,95 +448,9 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/#" rel="noreferrer" target="_blank">git-intro by coderefinery</a></p></li>
 <li><p><a class="reference external" href="https://gitmoji.dev/" rel="noreferrer" target="_blank">git-moji</a></p></li>
 <li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain" rel="noreferrer" target="_blank">Git Internals - Plumbing and Porcelain</a></p></li>
-<li><p><a class="reference external" href="https://www.git-scm.com/docs/gitglossary" rel="noreferrer" target="_blank">Glossary of terms (technical for git)</a></p></li>
-<li><p><a class="reference external" href="https://docs.github.com/en/get-started/learning-about-github/github-glossary" rel="noreferrer" target="_blank">GitHub Glossary terms</a></p></li>
+<li><p><a class="reference external" href="https://www.git-scm.com/docs/gitglossary" rel="noreferrer" target="_blank">Glossary of terms for git</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/get-started/learning-about-github/github-glossary" rel="noreferrer" target="_blank">Glossary terms for GitHub</a></p></li>
 </ul>
-</section>
-<section id="git-under-the-hood-extended-version">
-<h2>Git under the hood (Extended version)<a class="headerlink" href="#git-under-the-hood-extended-version" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>Extended content for those interested in how git works under the hood</p>
-</div></blockquote>
-<p>You can find a recording of the
-<a class="reference external" href="https://www.youtube.com/watch?v=cAU3BCUkHxM" rel="noreferrer" target="_blank">talk</a>
-(<a class="reference external" href="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/edit?usp=sharing" rel="noreferrer" target="_blank">slides</a>)
-and <a class="reference external" href="https://www.youtube.com/watch?v=5iB7qc5zRjQ" rel="noreferrer" target="_blank">hands-on tutorial</a>
-on YouTube which was done for the Data Club seminar
-between DTU biosustain and DTU bioengineering (see sections in description of Video).</p>
-<p>Talk:
-<a class="reference external" href="https://www.youtube.com/watch?v=cAU3BCUkHxM" rel="noreferrer" target="_blank"><img alt="Recording of talk" src="https://img.youtube.com/vi/cAU3BCUkHxM/maxresdefault.jpg" /></a></p>
-<p>Live Demo:
-<a class="reference external" href="https://www.youtube.com/watch?v=5iB7qc5zRjQ" rel="noreferrer" target="_blank"><img alt="Live Demo of Hands On part" src="https://img.youtube.com/vi/5iB7qc5zRjQ/maxresdefault.jpg" /></a></p>
-<p>The above Live Demo is not pulling the merge commit after merging the branch on GitHub:
-<a class="reference external" href="https://github.com/biosustain/git_training_henry_recording" rel="noreferrer" target="_blank">github.com/biosustain/git_training_henry_recording</a></p>
-<p>I show the merge commit in the video below, cloining the recording repository in a newly
-create VSCode sandbox environment above:</p>
-<p><a class="reference external" href="https://www.youtube.com/watch?v=gcfzruIJ-rw" rel="noreferrer" target="_blank"><img alt="Live Demo Hand on Addon" src="https://img.youtube.com/vi/gcfzruIJ-rw/sddefault.jpg" /></a></p>
-<section id="instructions">
-<h3>Instructions<a class="headerlink" href="#instructions" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>create a folder with an empty repository (default <code class="docutils literal notranslate"><span class="pre">examples</span></code>
-directly openend in VSCode on binder)</p></li>
-<li><p>open instruction: <code class="docutils literal notranslate"><span class="pre">code-server</span> <span class="pre">../README.md</span></code> (local computer: <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">../README.md</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> in console to initialize repo (or via command palette “Git: Initialize Repository”)</p></li>
-<li><p>setup user.name and user.email (see above)</p></li>
-<li><p>create files, stage them and see what files are created in <code class="docutils literal notranslate"><span class="pre">.git/objects</span></code></p></li>
-<li><p>commit files and check <code class="docutils literal notranslate"><span class="pre">.git/objects</span></code></p></li>
-<li><p>create branches and checkout <code class="docutils literal notranslate"><span class="pre">.git/refs</span></code> (<code class="docutils literal notranslate"><span class="pre">git/branches</span></code> is a legacy folder,see
-<a class="reference external" href="https://stackoverflow.com/a/10398507/9684872" rel="noreferrer" target="_blank">here</a>)</p></li>
-<li><p>look at <code class="docutils literal notranslate"><span class="pre">git/HEAD</span></code> (maybe <code class="docutils literal notranslate"><span class="pre">git/ORIG_HEAD</span></code> if it exists)</p></li>
-</ul>
-<blockquote>
-<div><p>try to create your own fork, and try to lauch it on <a class="reference external" href="https://mybinder.org/" rel="noreferrer" target="_blank">mybinder</a></p>
-</div></blockquote>
-</section>
-<section id="inspect-git-objects">
-<h3>Inspect git objects<a class="headerlink" href="#inspect-git-objects" title="Link to this heading">#</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>log<span class="w"> </span>--format<span class="o">=</span>raw
-git<span class="w"> </span>cat-file<span class="w"> </span>-p<span class="w"> </span>&lt;hash&gt;<span class="w"> </span><span class="c1"># pretty print</span>
-git<span class="w"> </span>cat-file<span class="w"> </span>-t<span class="w"> </span>&lt;hash&gt;<span class="w"> </span><span class="c1"># type</span>
-
-<span class="c1"># the binary object can also be inspected using different tools,</span>
-<span class="c1"># which might make it easier to navigate to certain blobs:</span>
-cat<span class="w"> </span>.git/objects/&lt;2c&gt;/&lt;38c&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>zlib-flate<span class="w"> </span>-uncompress
-</pre></div>
-</div>
-<p>You can find the latest objects and compare it to the log</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find<span class="w"> </span>.git/objects<span class="w">  </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>ls<span class="w"> </span>-lt<span class="w"> </span><span class="o">{}</span><span class="w"> </span>+<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">10</span>
-git<span class="w"> </span>log<span class="w"> </span>--format<span class="o">=</span>raw<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span>
-</pre></div>
-</div>
-<p>If you wonder what the codes in a tree mean, check this stackexchange
-<a class="reference external" href="https://unix.stackexchange.com/a/450488/349761" rel="noreferrer" target="_blank">answer</a></p>
-</section>
-<section id="what-s-happening">
-<h3>What’s happening?<a class="headerlink" href="#what-s-happening" title="Link to this heading">#</a></h3>
-<p>Can you explain what happens in the following scenarios?</p>
-<ul class="simple">
-<li><p>You committed ten commits and did not yet push. Git complains about too much data.
-You realize that you committed your source data. You delete it and commit again,
-but the problem still persists.</p></li>
-<li><p>You commit something and push. You realize your last commit was wrong. You undo it
-and commit again. Git complains that you cannot push.</p></li>
-</ul>
-</section>
-<section id="git-internals-resources">
-<h3>Git internals resources<a class="headerlink" href="#git-internals-resources" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://matthew-brett.github.io/curious-git/" rel="noreferrer" target="_blank">curious git</a> - detailed intro to the
-inner workings</p></li>
-<li><p><a class="reference external" href="http://practical-neuroimaging.github.io/git_parable.html" rel="noreferrer" target="_blank">git parable</a> - why git came to exist</p></li>
-<li><p>Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=xvzo_nV9PjU" rel="noreferrer" target="_blank">Python-Git-Client</a></p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=MYP56QJpDr4" rel="noreferrer" target="_blank">Git-Interals</a> - shows how git works</p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=rBYC3dEOOyI" rel="noreferrer" target="_blank">Git PyData Global 2021 talk</a></p></li>
-<li><p>Scoot Chacon’s <a class="reference external" href="https://www.youtube.com/watch?v=aolI_Rz0ZqY" rel="noreferrer" target="_blank">“So you thin you know git” talk</a> (FOSDEM 2024),
-notes on <a class="reference external" href="https://blog.gitbutler.com/git-tips-1-theres-a-git-config-for-that/" rel="noreferrer" target="_blank">blog</a></p></li>
-</ul>
-</li>
-</ul>
-</section>
 </section>
 </section>
 
@@ -566,15 +485,9 @@ notes on <a class="reference external" href="https://blog.gitbutler.com/git-tips
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-timeline-of-the-workshop">Brief timeline of the workshop:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-locally">Explore locally</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slides">Slides</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#local-setup">Local Setup</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#links-to-learn-more">Links to learn more</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-under-the-hood-extended-version">Git under the hood (Extended version)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions">Instructions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-git-objects">Inspect git objects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-happening">What’s happening?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#git-internals-resources">Git internals resources</a></li>
-</ul>
-</li>
 </ul>
   </nav></div>
 

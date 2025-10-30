@@ -44,7 +44,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'instructions_251105';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Workshop on the 13th of November 2024" href="instructions_241113.html" />
+    <link rel="next" title="Use cases for git and GitHub" href="use_cases.html" />
     <link rel="prev" title="Git Tutorial" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -172,8 +172,16 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic introduction</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Workshop on the 5th of November 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use_cases.html">Use cases for git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_setup.html">Setup git locally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="receipe_book.html">Recipe Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced content</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Git under the hood</a></li>
 <li class="toctree-l1"><a class="reference internal" href="instructions_241113.html">Workshop on the 13th of November 2024</a></li>
 </ul>
 
@@ -342,6 +350,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#on-the-github-website">On the GitHub website</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-vscode-in-the-browser-without-a-workspace">In VSCode in the browser without a workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-github-workspace">In GitHub Workspace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#on-local-computer">On local computer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-your-recipe-and-request-a-review-basic">Add your recipe and request a review [basic]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-merge-conflict-medium">Create a merge conflict [medium]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rewrite-history-advanced">Rewrite history [advanced]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-and-remove-large-files-advanced">Add and remove large files [advanced]</a></li>
 </ul>
 </li>
 </ul>
@@ -364,6 +380,9 @@ document.write(`
 <h2>How to work with the repository<a class="headerlink" href="#how-to-work-with-the-repository" title="Link to this heading">#</a></h2>
 <p>You need to be logged in to GitHub and have a GitHub account for all these options:
 <a class="reference external" href="https://github.com/join" rel="noreferrer" target="_blank">Create a GitHub account</a></p>
+<blockquote>
+<div><p>ToDo: Make brief video for preperations and as reference</p>
+</div></blockquote>
 <section id="on-the-github-website">
 <h3>On the GitHub website<a class="headerlink" href="#on-the-github-website" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -374,7 +393,8 @@ document.write(`
 <h3>In VSCode in the browser without a workspace<a class="headerlink" href="#in-vscode-in-the-browser-without-a-workspace" title="Link to this heading">#</a></h3>
 <p>You need to be logged in to GitHub and have a GitHub account.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.dev/enryH/recipe-book" rel="noreferrer" target="_blank">github.dev/enryH/recipe-book</a></p></li>
+<li><p><a class="reference external" href="https://github.dev/enryH/recipe-book" rel="noreferrer" target="_blank">github.dev/enryH/recipe-book (Editor)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/enryH/recipe-book" rel="noreferrer" target="_blank">github.com/enryH/recipe-book (Website)</a></p></li>
 </ul>
 </section>
 <section id="in-github-workspace">
@@ -385,6 +405,94 @@ creating a commit:</p>
 <p><a class="reference external" href="https://github.com/codespaces/new?hide_repo_select=true&amp;amp;ref=main&amp;amp;repo=1053356553&amp;amp;skip_quickstart=true" rel="noreferrer" target="_blank"><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg" /></a></p>
 </li>
 </ul>
+</section>
+<section id="on-local-computer">
+<h3>On local computer<a class="headerlink" href="#on-local-computer" title="Link to this heading">#</a></h3>
+<p>Install both an editor, e.g. <a class="reference external" href="https://code.visualstudio.com/download" rel="noreferrer" target="_blank">VSCode</a> (recommended),
+and the command line program <a class="reference external" href="https://git-scm.com/install/" rel="noreferrer" target="_blank">git</a></p>
+</section>
+</section>
+<section id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<p>Choose your favrioute.</p>
+<section id="add-your-recipe-and-request-a-review-basic">
+<h3>Add your recipe and request a review [basic]<a class="headerlink" href="#add-your-recipe-and-request-a-review-basic" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>This I have to test with someone</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/enryH/recipe-book/fork" rel="noreferrer" target="_blank">create a fork</a>
+(or request access as collaborator of the the recipe-repo)</p></li>
+<li><p>add and commit your recipe. The next two steps can be done either as first or
+second, why?</p>
+<ul>
+<li><p>create a branch with your new recipe, e.g. <code class="docutils literal notranslate"><span class="pre">add-aioli-pasta</span></code></p></li>
+<li><p>create a commit with your new recipe draft</p></li>
+</ul>
+</li>
+<li><p>open a Pull (Merge) Request on GitHub to <code class="docutils literal notranslate"><span class="pre">origin/main</span></code></p></li>
+<li><p>ask someone (by inviting them) to review your PR and get an approval</p>
+<ul>
+<li><p>I set-up the repo to require at least one approval before a merge is possible
+(best-practice)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="create-a-merge-conflict-medium">
+<h3>Create a merge conflict [medium]<a class="headerlink" href="#create-a-merge-conflict-medium" title="Link to this heading">#</a></h3>
+<p>Work simulatenously on the same files, writing new content to the same sections in text.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pasta/boscaiola.md</span></code> is incomplete. Complete it on your own branch.</p>
+<ul>
+<li><p>the first to commit to main, will have no problems as the update passes</p></li>
+<li><p>everyone after has to resolve merge conflicts as the changes are not easy to resolve
+automatically (draw out the graph to see why)</p></li>
+</ul>
+</li>
+</ul>
+<p>How to merge:</p>
+<ul class="simple">
+<li><p>Open a GitHub PR, follow the instructions there
+(see <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github" rel="noreferrer" target="_blank">Web-Editor</a>)</p></li>
+<li><p>too large differences have to resolved locally, e.g. using the
+<a class="reference external" href="https://code.visualstudio.com/docs/sourcecontrol/overview" rel="noreferrer" target="_blank">VSCode Merge Editor</a>. See
+<a class="reference external" href="https://www.youtube.com/watch?v=HosPml1qkrg" rel="noreferrer" target="_blank">this tutorial</a>.</p></li>
+</ul>
+<p>How and when to integrate changes from the main branch?</p>
+<ul class="simple">
+<li><p>setting in Repo to suggest to ‘Update branch’ (you need to own the repo)</p></li>
+<li><p>merge in changes locally using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></p></li>
+<li><p>leave it to git and create a ‘merge commit’ which has two parents</p></li>
+</ul>
+</section>
+<section id="rewrite-history-advanced">
+<h3>Rewrite history [advanced]<a class="headerlink" href="#rewrite-history-advanced" title="Link to this heading">#</a></h3>
+</section>
+<section id="add-and-remove-large-files-advanced">
+<h3>Add and remove large files [advanced]<a class="headerlink" href="#add-and-remove-large-files-advanced" title="Link to this heading">#</a></h3>
+<p>GitHub set a limit of 100MB per file. It’s a <em>best pratice</em> to only commit code and
+documenation, and if needed small example datasets. Adding larger files than 100MB is
+possible locally, but then the commit cannot be syncronized with the remote, hosted
+repository.</p>
+<ul class="simple">
+<li><p>use a large file (e.g. these ones: )</p></li>
+<li><p>commit them in a data folder</p></li>
+<li><p>add a few more commits (loading the files or what else)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rebase</span></code> to remove the files again, see
+<a class="reference external" href="https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase" rel="noreferrer" target="_blank">this tutorial</a>.
+Options:</p>
+<ul>
+<li><p>edit the commit where you added the large files and remove them</p></li>
+<li><p>commit a new delete commit and squash it into the one where you added the files</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>Please not that files synchronized once to GitHub stay there ‘forever’. If you update
+your history (your commits) they are lost by being not referenced anywhere, but anyone
+who knows the commit-id and has access can in princple find them again</p>
+</div></blockquote>
 </section>
 </section>
 </section>
@@ -410,11 +518,11 @@ creating a commit:</p>
       </div>
     </a>
     <a class="right-next"
-       href="instructions_241113.html"
+       href="use_cases.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Workshop on the 13th of November 2024</p>
+        <p class="prev-next-title">Use cases for git and GitHub</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -438,6 +546,14 @@ creating a commit:</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#on-the-github-website">On the GitHub website</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-vscode-in-the-browser-without-a-workspace">In VSCode in the browser without a workspace</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-github-workspace">In GitHub Workspace</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#on-local-computer">On local computer</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-your-recipe-and-request-a-review-basic">Add your recipe and request a review [basic]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-merge-conflict-medium">Create a merge conflict [medium]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rewrite-history-advanced">Rewrite history [advanced]</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-and-remove-large-files-advanced">Add and remove large files [advanced]</a></li>
 </ul>
 </li>
 </ul>
