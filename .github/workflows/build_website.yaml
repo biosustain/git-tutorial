@@ -38,8 +38,7 @@ jobs:
           # # set it to a subfolder of the root to keep all PR previews:
           # destination_dir: latest
           # cname: website.com
-      - if: ${{ github.ref != 'refs/heads/main' }}
-        name: Save to gh-pages
+      - name: Save to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
