@@ -76,6 +76,19 @@ How and when to integrate changes from the main branch?
 
 ### Rewrite history [advanced]
 
+> You can do this on your own repository or the recipe-book repo on a branch.
+
+- add a few more commits (loading the files or what else)
+- `rebase` to remove the files again, see
+  [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
+- edit, squash, delete or reorder commits
+
+Try an interactive rebase to rewrite history. To edit the last 4 commits, use:
+
+```bash
+git rebase -i HEAD~4
+```
+
 ### Add and remove large files [advanced]
 
 GitHub set a limit of 100MB per file. It's a _best pratice_ to only commit code and
@@ -83,7 +96,18 @@ documenation, and if needed small example datasets. Adding larger files than 100
 possible locally, but then the commit cannot be syncronized with the remote, hosted
 repository.
 
-- use a large file (e.g. these ones: )
+- use a large file (e.g. these ones: ) or generate some random large files:
+
+  ```python
+  import numpy as np
+  alphabet = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+       'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+      dtype='<U1')
+  mb = 1024*1024
+  n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
+  np.random.choice(np.fromstring(alphabet, dtype='<U1'), n)
+  ```
+
 - commit them in a data folder
 - add a few more commits (loading the files or what else)
 - `rebase` to remove the files again, see
@@ -95,3 +119,11 @@ repository.
 > Please not that files synchronized once to GitHub stay there 'forever'. If you update
 > your history (your commits) they are lost by being not referenced anywhere, but anyone
 > who knows the commit-id and has access can in princple find them again
+
+#### How does it happen in practice?
+
+- data is commited, but not every commit is synced to the remote
+- long notebooks with outputs are commited, making it very large text files (espe
+  with interactive plots)
+
+> so check for large individual files if you cannot push your changes
