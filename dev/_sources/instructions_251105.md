@@ -7,7 +7,6 @@
 You need to be logged in to GitHub and have a GitHub account for all these options:
 [Create a GitHub account](https://github.com/join)
 
-> ToDo: Make brief video for preperations and as reference
 
 These information might be helpful:
 
@@ -63,6 +62,11 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 - merge the PR into `main` (you can do it yourself after getting the approval)
   - check out your options (merge, squash, rebase) and choose one
 - syncronize your branch with `main` with `origin/main` (before adding a new recipe)
+
+<details>
+<summary>See full pass through exercise</summary>
+> ToDo: Make brief video for preperations and as reference
+</details>
 
 ### Create a merge conflict [medium]
 
