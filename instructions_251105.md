@@ -91,8 +91,11 @@ How and when to integrate changes from the main branch?
 > You can do this on your own repository or the recipe-book repo on a branch.
 
 - add a few more commits (loading the files or what else)
-- `rebase` to remove the files again, see
+- `rebase interactive` to remove the files again, see
   [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
+  Please make sure you understand one of it's main comments:
+  > "It's very important to understand that even though the branch looks the same,
+  >  it's composed of entirely new commits."
 - edit, squash, delete or reorder commits
 
 Try an interactive rebase to rewrite history. To edit the last 4 commits, use:
@@ -100,6 +103,49 @@ Try an interactive rebase to rewrite history. To edit the last 4 commits, use:
 ```bash
 git rebase -i HEAD~4
 ```
+<details>
+<summary>What is interactive rebase?</summary>
+
+An Interactive rebase is a Git command that allows you to edit, reorder, squash,
+or delete commits in your branch's history. This is useful for cleaning up your commit
+history before merging changes, combining related commits, or removing mistakes.
+
+Common actions during interactive rebase:
+- `pick`: Use the commit as is.
+- `reword`: Edit the commit message.
+- `edit`: Pause to amend the commit.
+- `squash`: Combine this commit with the previous one.
+- `drop`: Remove the commit.
+
+It will look something similar to this (taken from the tutorial linked above):
+
+```bash
+pick 2231360 some old commit
+pick ee2adc2 Adds new feature
+
+
+# Rebase 2cf755d..ee2adc2 onto 2cf755d (9 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+```
+
+workflow:
+1. Run `git rebase -i HEAD~4` to open the last 4 commits in your editor.
+2. Change the action keywords as needed.
+3. Save and close the editor to apply changes.
+4. Resolve any conflicts if prompted.
+
+> Interactive rebase rewrites commit history. Only use it on branches that haven't 
+  been shared with others, or coordinate closely with collaborators to avoid confusion.
+
+</details>
 
 ### Add and remove large files [advanced]
 
