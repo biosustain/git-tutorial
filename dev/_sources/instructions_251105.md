@@ -1,6 +1,6 @@
 # Workshop on the 5th of November 2025
 
-> to be continued.
+
 
 ## How to work with the repository
 
@@ -9,9 +9,20 @@ You need to be logged in to GitHub and have a GitHub account for all these optio
 
 > ToDo: Make brief video for preperations and as reference
 
+These information might be helpful:
+
+ - basic Markdown syntax: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+We will by default be using VS Code in the Browser with a GitHub Codespace connected.
+Please have a look at the (video) tutorials before the course:
+- VSCode in the Browser: [vscode-web](https://code.visualstudio.com/docs/setup/vscode-web)
+            ( we will connect a remote machine using a codespace)
+- Codespaces: [codespaces/quickstart](https://docs.github.com/en/codespaces/quickstart)
+
 ### On the GitHub website
 
-- Create a fork of the repository and work there
+- [Create a fork](https://github.com/biosustain/recipe-book/fork) 
+  of the repository and work there
 
 ### In VSCode in the browser without a workspace
 
@@ -34,13 +45,14 @@ and the command line program [git](https://git-scm.com/install/)
 
 ## Exercises
 
-Choose your favrioute.
+Choose your favourite. We will focus on the basic one, but you can try the others
+as well or instead. Find exercise groups seeing the marks on the tables.
 
 ### Add your recipe and request a review [basic]
 
 > This I have to test with someone
 
-- [create a fork](https://github.com/enryH/recipe-book/fork)
+- [create a fork](https://github.com/biosustain/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
 - add and commit your recipe. The next two steps can be done either as first or
   second, why?
@@ -76,6 +88,73 @@ How and when to integrate changes from the main branch?
 
 ### Rewrite history [advanced]
 
+> You can do this on your own repository or the recipe-book repo on a branch.
+
+- add a few more commits (loading the files or what else)
+- `rebase interactive` to remove the files again, see
+  [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
+  Please make sure you understand one of it's main comments:
+  > "It's very important to understand that even though the branch looks the same,
+  >  it's composed of entirely new commits."
+- edit, squash, delete or reorder commits
+
+Try an interactive rebase to rewrite history. To edit the last 4 commits, use:
+
+```bash
+git rebase -i HEAD~4
+```
+or with respect to the `main` branch:
+```bash
+git rebase -i main
+```
+
+All the instructions will be visable to you in your default editor. Try to follow them
+using the help of the linked tutorial.
+
+<details>
+<summary>What is interactive rebase?</summary>
+
+An Interactive rebase is a Git command that allows you to edit, reorder, squash,
+or delete commits in your branch's history. This is useful for cleaning up your commit
+history before merging changes, combining related commits, or removing mistakes.
+
+Common actions during interactive rebase:
+- `pick`: Use the commit as is.
+- `reword`: Edit the commit message.
+- `edit`: Pause to amend the commit.
+- `squash`: Combine this commit with the previous one.
+- `drop`: Remove the commit.
+
+It will look something similar to this (taken from the tutorial linked above):
+
+```bash
+pick 2231360 some old commit
+pick ee2adc2 Adds new feature
+
+
+# Rebase 2cf755d..ee2adc2 onto 2cf755d (9 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+```
+
+workflow:
+1. Run `git rebase -i HEAD~4` to open the last 4 commits in your editor.
+2. Change the action keywords as needed.
+3. Save and close the editor to apply changes.
+4. Resolve any conflicts if prompted.
+
+> Interactive rebase rewrites commit history. Only use it on branches that haven't 
+  been shared with others, or coordinate closely with collaborators to avoid confusion.
+
+</details>
+
 ### Add and remove large files [advanced]
 
 GitHub set a limit of 100MB per file. It's a _best pratice_ to only commit code and
@@ -83,9 +162,49 @@ documenation, and if needed small example datasets. Adding larger files than 100
 possible locally, but then the commit cannot be syncronized with the remote, hosted
 repository.
 
-- use a large file (e.g. these ones: )
+- use a large file generating some random large files (e.g. this
+ [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing):
+
+  ```python
+  import numpy as np
+  alphabet = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+       'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+      dtype='<U1')
+  mb = 1024*1024
+  n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
+  np.random.choice(np.fromstring(alphabet, dtype='<U1'), n)
+  ```
+
 - commit them in a data folder
 - add a few more commits (loading the files or what else)
+- try to push the changes to GitHub, it will fail
+  <details>
+  <summary>See error you will encounter uploading large files</summary>
+
+  I added two commits, where the older one (the first one) contains a large file:
+
+  ```
+  (base) heweb@nnfcb-l1106 recipe-book % git push
+  Enumerating objects: 9, done.
+  Counting objects: 100% (9/9), done.
+  Delta compression using up to 11 threads
+  Compressing objects: 100% (7/7), done.
+  Writing objects: 100% (7/7), 66.75 MiB | 31.34 MiB/s, done.
+  Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+  remote: error: Trace: cb745b39bf3e1c2e15b6a344ef0eb8c2610555ec1fb16bb2773facc475e525be
+  remote: error: See https://gh.io/lfs for more information.
+  remote: error: File large_text_file.txt is 105.00 MB; this exceeds GitHub's file size limit of 100.00 MB
+  remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+  To https://github.com/enryH/recipe-book.git
+  ! [remote rejected] test-lfs -> test-lfs (pre-receive hook declined)
+  error: failed to push some refs to 'https://github.com/enryH/recipe-book.git'
+  ```
+
+  As of now git has a built-in support for hinting you at which files are to large to be
+  uploaded to GitHub.
+  </details>
+
 - `rebase` to remove the files again, see
   [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
   Options:
@@ -95,3 +214,11 @@ repository.
 > Please not that files synchronized once to GitHub stay there 'forever'. If you update
 > your history (your commits) they are lost by being not referenced anywhere, but anyone
 > who knows the commit-id and has access can in princple find them again
+
+#### How does it happen in practice?
+
+- data is commited, but not every commit is synced to the remote
+- long notebooks with outputs are commited, making it very large text files (espe
+  with interactive plots)
+
+> so check for large individual files if you cannot push your changes
