@@ -54,14 +54,15 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 
 - [create a fork](https://github.com/biosustain/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
-- add and commit your recipe. The next two steps can be done either as first or
-  second, why?
-  - create a branch with your new recipe, e.g. `add-aioli-pasta`
-  - create a commit with your new recipe draft
+- create a new branch from `main`, e.g. `add-aioli-pasta`
+- create a commit with your new recipe draft
 - open a Pull (Merge) Request on GitHub to `origin/main`
 - ask someone (by inviting them) to review your PR and get an approval
   - I set-up the repo to require at least one approval before a merge is possible
     (best-practice)
+- merge the PR into `main` (you can do it yourself after getting the approval)
+  - check out your options (merge, squash, rebase) and choose one
+- syncronize your branch with `main` with `origin/main` (before adding a new recipe)
 
 ### Create a merge conflict [medium]
 
