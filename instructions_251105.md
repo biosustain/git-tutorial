@@ -49,8 +49,6 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 
 ### Add your recipe and request a review [basic]
 
-> This I have to test with someone
-
 - [create a fork](https://github.com/biosustain/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
 - create a new branch from `main`, e.g. `add-aioli-pasta`
@@ -81,13 +79,13 @@ How to merge:
 
 - Open a GitHub PR, follow the instructions there
   (see [Web-Editor](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github))
-- too large differences have to resolved locally, e.g. using the
+- too large differences have to be resolved locally, e.g. using the
   [VSCode Merge Editor](https://code.visualstudio.com/docs/sourcecontrol/overview). See
   [this tutorial](https://www.youtube.com/watch?v=HosPml1qkrg).
 
 How and when to integrate changes from the main branch?
 
-- setting in Repo to suggest to 'Update branch' (you need to own the repo)
+- setting in repository on GitHub to suggest to 'Update branch' (you need to own the repo)
 - merge in changes locally using `git merge`
 - leave it to git and create a 'merge commit' which has two parents
 
@@ -117,7 +115,7 @@ All the instructions will be visable to you in your default editor. Try to follo
 using the help of the linked tutorial.
 
 <details>
-<summary>What is interactive rebase?</summary>
+<summary>What is an interactive rebase?</summary>
 
 An Interactive rebase is a Git command that allows you to edit, reorder, squash,
 or delete commits in your branch's history. This is useful for cleaning up your commit
@@ -168,7 +166,8 @@ possible locally, but then the commit cannot be syncronized with the remote, hos
 repository.
 
 - use a large file generating some random large files (e.g. this
- [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing):
+  [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing
+  I created running the Python code below):
 
   ```python
   import numpy as np
@@ -189,7 +188,7 @@ repository.
   I added two commits, where the older one (the first one) contains a large file:
 
   ```
-  (base) heweb@nnfcb-l1106 recipe-book % git push
+  heweb@nnfcb-l1106 recipe-book % git push
   Enumerating objects: 9, done.
   Counting objects: 100% (9/9), done.
   Delta compression using up to 11 threads
