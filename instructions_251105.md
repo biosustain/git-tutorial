@@ -103,6 +103,14 @@ Try an interactive rebase to rewrite history. To edit the last 4 commits, use:
 ```bash
 git rebase -i HEAD~4
 ```
+or with respect to the `main` branch:
+```bash
+git rebase -i main
+```
+
+All the instructions will be visable to you in your default editor. Try to follow them
+using the help of the linked tutorial.
+
 <details>
 <summary>What is interactive rebase?</summary>
 
