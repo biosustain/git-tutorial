@@ -96,7 +96,8 @@ documenation, and if needed small example datasets. Adding larger files than 100
 possible locally, but then the commit cannot be syncronized with the remote, hosted
 repository.
 
-- use a large file (e.g. these ones: ) or generate some random large files:
+- use a large file generating some random large files (e.g. this
+ [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing):
 
   ```python
   import numpy as np
@@ -110,6 +111,34 @@ repository.
 
 - commit them in a data folder
 - add a few more commits (loading the files or what else)
+- try to push the changes to GitHub, it will fail
+  <details>
+  <summary>See error you will encounter uploading large files</summary>
+
+  I added two commits, where the older one (the first one) contains a large file:
+
+  ```bash
+  (base) heweb@nnfcb-l1106 recipe-book % git push
+  Enumerating objects: 9, done.
+  Counting objects: 100% (9/9), done.
+  Delta compression using up to 11 threads
+  Compressing objects: 100% (7/7), done.
+  Writing objects: 100% (7/7), 66.75 MiB | 31.34 MiB/s, done.
+  Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+  remote: error: Trace: cb745b39bf3e1c2e15b6a344ef0eb8c2610555ec1fb16bb2773facc475e525be
+  remote: error: See https://gh.io/lfs for more information.
+  remote: error: File large_text_file.txt is 105.00 MB; this exceeds GitHub's file size limit of 100.00 MB
+  remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+  To https://github.com/enryH/recipe-book.git
+  ! [remote rejected] test-lfs -> test-lfs (pre-receive hook declined)
+  error: failed to push some refs to 'https://github.com/enryH/recipe-book.git'
+  ```
+
+  As of now git has a built-in support for hinting you at which files are to large to be
+  uploaded to GitHub.
+  </details>
+
 - `rebase` to remove the files again, see
   [this tutorial](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase).
   Options:
