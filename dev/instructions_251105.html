@@ -427,9 +427,6 @@ and the command line program <a class="reference external" href="https://git-scm
 as well or instead. Find exercise groups seeing the marks on the tables.</p>
 <section id="add-your-recipe-and-request-a-review-basic">
 <h3>Add your recipe and request a review [basic]<a class="headerlink" href="#add-your-recipe-and-request-a-review-basic" title="Link to this heading">#</a></h3>
-<blockquote>
-<div><p>This I have to test with someone</p>
-</div></blockquote>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/biosustain/recipe-book/fork" rel="noreferrer" target="_blank">create a fork</a>
 (or request access as collaborator of the the recipe-repo)</p></li>
@@ -470,13 +467,13 @@ automatically (draw out the graph to see why)</p></li>
 <ul class="simple">
 <li><p>Open a GitHub PR, follow the instructions there
 (see <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github" rel="noreferrer" target="_blank">Web-Editor</a>)</p></li>
-<li><p>too large differences have to resolved locally, e.g. using the
+<li><p>too large differences have to be resolved locally, e.g. using the
 <a class="reference external" href="https://code.visualstudio.com/docs/sourcecontrol/overview" rel="noreferrer" target="_blank">VSCode Merge Editor</a>. See
 <a class="reference external" href="https://www.youtube.com/watch?v=HosPml1qkrg" rel="noreferrer" target="_blank">this tutorial</a>.</p></li>
 </ul>
 <p>How and when to integrate changes from the main branch?</p>
 <ul class="simple">
-<li><p>setting in Repo to suggest to ‘Update branch’ (you need to own the repo)</p></li>
+<li><p>setting in repository on GitHub to suggest to ‘Update branch’ (you need to own the repo)</p></li>
 <li><p>merge in changes locally using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></p></li>
 <li><p>leave it to git and create a ‘merge commit’ which has two parents</p></li>
 </ul>
@@ -509,7 +506,7 @@ it’s composed of entirely new commits.”</p>
 <p>All the instructions will be visable to you in your default editor. Try to follow them
 using the help of the linked tutorial.</p>
 <details>
-<summary>What is interactive rebase?</summary>
+<summary>What is an interactive rebase?</summary>
 <p>An Interactive rebase is a Git command that allows you to edit, reorder, squash,
 or delete commits in your branch’s history. This is useful for cleaning up your commit
 history before merging changes, combining related commits, or removing mistakes.</p>
@@ -559,7 +556,8 @@ possible locally, but then the commit cannot be syncronized with the remote, hos
 repository.</p>
 <ul>
 <li><p>use a large file generating some random large files (e.g. this
-<a class="reference external" href="https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing" rel="noreferrer" target="_blank">one</a>:</p>
+[one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing
+I created running the Python code below):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">alphabet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
      <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">],</span>
@@ -576,7 +574,7 @@ repository.</p>
 <details>
 <summary>See error you will encounter uploading large files</summary>
 <p>I added two commits, where the older one (the first one) contains a large file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(base) heweb@nnfcb-l1106 recipe-book % git push
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>heweb@nnfcb-l1106 recipe-book % git push
 Enumerating objects: 9, done.
 Counting objects: 100% (9/9), done.
 Delta compression using up to 11 threads
