@@ -50,7 +50,7 @@ If you want to follow along locally, please install
 ## Slides
 
 <iframe 
-src="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/embed?slide=id.p#slide=id.p" 
+src="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/embed" 
 frameborder="0"
 width="100%" height="480" 
 allowfullscreen="true"
