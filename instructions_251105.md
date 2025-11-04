@@ -183,7 +183,7 @@ repository.
 
   I added two commits, where the older one (the first one) contains a large file:
 
-  ```bash
+  ```
   (base) heweb@nnfcb-l1106 recipe-book % git push
   Enumerating objects: 9, done.
   Counting objects: 100% (9/9), done.
