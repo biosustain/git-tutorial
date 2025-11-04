@@ -1,6 +1,6 @@
 # Workshop on the 5th of November 2025
 
-> to be continued.
+
 
 ## How to work with the repository
 
@@ -9,9 +9,20 @@ You need to be logged in to GitHub and have a GitHub account for all these optio
 
 > ToDo: Make brief video for preperations and as reference
 
+These information might be helpful:
+
+ - basic Markdown syntax: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+We will by default be using VS Code in the Browser with a GitHub Codespace connected.
+Please have a look at the (video) tutorials before the course:
+- VSCode in the Browser: [vscode-web](https://code.visualstudio.com/docs/setup/vscode-web)
+            ( we will connect a remote machine using a codespace)
+- Codespaces: [codespaces/quickstart](https://docs.github.com/en/codespaces/quickstart)
+
 ### On the GitHub website
 
-- Create a fork of the repository and work there
+- [Create a fork](https://github.com/biosustain/recipe-book/fork) 
+  of the repository and work there
 
 ### In VSCode in the browser without a workspace
 
@@ -34,13 +45,14 @@ and the command line program [git](https://git-scm.com/install/)
 
 ## Exercises
 
-Choose your favrioute.
+Choose your favourite. We will focus on the basic one, but you can try the others
+as well or instead. Find exercise groups seeing the marks on the tables.
 
 ### Add your recipe and request a review [basic]
 
 > This I have to test with someone
 
-- [create a fork](https://github.com/enryH/recipe-book/fork)
+- [create a fork](https://github.com/biosustain/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
 - add and commit your recipe. The next two steps can be done either as first or
   second, why?
