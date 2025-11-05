@@ -33,7 +33,7 @@ You need to be logged in to GitHub and have a GitHub account.
 - Open in GitHub Codespace if you want to build and preview the website without
   creating a commit:
 
-  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&amp%3Bref=main&amp%3Brepo=1053356553&amp%3Bskip_quickstart=true&skip_quickstart=true&machine=basicLinux32gb&repo=1053356553&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
+  [![Open in GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&amp%3Bamp%3Bref=main&amp%3Bamp%3Brepo=1053356553&amp%3Bamp%3Bskip_quickstart=true&amp%3Bskip_quickstart=true&amp%3Bmachine=basicLinux32gb&amp%3Brepo=1053356553&amp%3Bref=main&amp%3Bdevcontainer_path=.devcontainer%2Fdevcontainer.json&amp%3Bgeo=EuropeWest&skip_quickstart=true&machine=basicLinux32gb&repo=1053356553&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
 
 > If you start from the `biosustain/recipe-book` repository you can create a codespace,
 > and it will automatically create a fork for you if you don't have write access.
