@@ -402,8 +402,8 @@ of the repository and work there</p></li>
 <h3>In VSCode in the browser without a workspace<a class="headerlink" href="#in-vscode-in-the-browser-without-a-workspace" title="Link to this heading">#</a></h3>
 <p>You need to be logged in to GitHub and have a GitHub account.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.dev/enryH/recipe-book" rel="noreferrer" target="_blank">github.dev/enryH/recipe-book (Editor)</a></p></li>
-<li><p><a class="reference external" href="https://github.com/enryH/recipe-book" rel="noreferrer" target="_blank">github.com/enryH/recipe-book (Website)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/biosustain/recipe-book" rel="noreferrer" target="_blank">github.com/biosustain/recipe-book (Website)</a></p></li>
+<li><p><a class="reference external" href="https://github.dev/biosustain/recipe-book" rel="noreferrer" target="_blank">github.dev/biosustain/recipe-book (Editor)</a></p></li>
 </ul>
 </section>
 <section id="in-github-workspace">
@@ -411,9 +411,13 @@ of the repository and work there</p></li>
 <ul>
 <li><p>Open in GitHub Codespace if you want to build and preview the website without
 creating a commit:</p>
-<p><a class="reference external" href="https://github.com/codespaces/new?hide_repo_select=true&amp;amp;ref=main&amp;amp;repo=1053356553&amp;amp;skip_quickstart=true" rel="noreferrer" target="_blank"><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg" /></a></p>
+<p><a class="reference external" href="https://github.com/codespaces/new?hide_repo_select=true&amp;amp;amp%3Bref=main&amp;amp;amp%3Brepo=1053356553&amp;amp;amp%3Bskip_quickstart=true&amp;amp;skip_quickstart=true&amp;amp;machine=basicLinux32gb&amp;amp;repo=1053356553&amp;amp;ref=main&amp;amp;devcontainer_path=.devcontainer%2Fdevcontainer.json&amp;amp;geo=EuropeWest" rel="noreferrer" target="_blank"><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg" /></a></p>
 </li>
 </ul>
+<blockquote>
+<div><p>If you start from the <code class="docutils literal notranslate"><span class="pre">biosustain/recipe-book</span></code> repository you can create a codespace,
+and it will automatically create a fork for you if you don’t have write access.</p>
+</div></blockquote>
 </section>
 <section id="on-local-computer">
 <h3>On local computer<a class="headerlink" href="#on-local-computer" title="Link to this heading">#</a></h3>
@@ -448,7 +452,16 @@ as well or instead. Find exercise groups seeing the marks on the tables.</p>
 </ul>
 <details>
 <summary>See full pass through exercise</summary>
-> ToDo: Make brief video for preperations and as reference
+<p><a class="reference external" href="https://www.youtube.com/watch?v=b3uTxjO7tAc" rel="noreferrer" target="_blank"><img alt="GitHub Codespaces &amp; VS Code in the Browser - Video Tutorial" src="https://img.youtube.com/vi/b3uTxjO7tAc/maxresdefault.jpg" /></a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b3uTxjO7tAc?si=oRVMYlZtwpZ0iOhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Watch this video for a walkthrough of using GitHub Codespaces and VS Code in the browser.</p>
+<p>Additional steps:</p>
+<ul class="simple">
+<li><p>check out to <code class="docutils literal notranslate"><span class="pre">main</span></code> branch</p></li>
+<li><p>sync <code class="docutils literal notranslate"><span class="pre">fork/main</span></code> with <code class="docutils literal notranslate"><span class="pre">origin/main</span></code> on your fork (on GitHub website of your fork)</p></li>
+<li><p>delete your codespaces afterwards to not use up all your credits:
+<a class="reference external" href="https://docs.github.com/en/codespaces/developing-in-a-codespace/deleting-a-codespace#deleting-a-codespace" rel="noreferrer" target="_blank">Deleting a codespace</a></p></li>
+</ul>
 </details>
 </section>
 <section id="create-a-merge-conflict-medium">
@@ -586,9 +599,9 @@ remote: error: Trace: cb745b39bf3e1c2e15b6a344ef0eb8c2610555ec1fb16bb2773facc475
 remote: error: See https://gh.io/lfs for more information.
 remote: error: File large_text_file.txt is 105.00 MB; this exceeds GitHub&#39;s file size limit of 100.00 MB
 remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-To https://github.com/enryH/recipe-book.git
+To https://github.com/biosustain/recipe-book.git
 ! [remote rejected] test-lfs -&gt; test-lfs (pre-receive hook declined)
-error: failed to push some refs to &#39;https://github.com/enryH/recipe-book.git&#39;
+error: failed to push some refs to &#39;https://github.com/biosustain/recipe-book.git&#39;
 </pre></div>
 </div>
 <p>As of now git has a built-in support for hinting you at which files are to large to be
