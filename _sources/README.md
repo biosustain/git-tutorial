@@ -13,7 +13,7 @@ GitHub Codespaces or in using the GitHub web interface. If you want, you can als
 everything on your local computer.
 
 I will give a brief introduction to git. Then you will specific workflows by
-collaboratively work on extending a [recipe book](https://enryh.github.io/recipe-book/)
+collaboratively work on extending a [recipe book](https://biosustain.github.io/recipe-book/)
 (please bring a recipe you like).
 You will learn how to work on
 [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches),

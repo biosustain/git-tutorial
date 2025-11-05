@@ -14,7 +14,7 @@ see our other trainings:
 ## Preview
 
 <div style="border: 2px solid black; border-radius: 4px; overflow: hidden;">
-    <iframe src="https://enryh.github.io/recipe-book/"
+    <iframe src="https://biosustain.github.io/recipe-book/"
         width="100%" height="600"
         allowfullscreen="true"
         mozallowfullscreen="true"
