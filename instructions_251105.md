@@ -27,8 +27,8 @@ Please have a look at the (video) tutorials before the course:
 
 You need to be logged in to GitHub and have a GitHub account.
 
-- [github.dev/enryH/recipe-book (Editor)](https://github.dev/enryH/recipe-book)
-- [github.com/enryH/recipe-book (Website)](https://github.com/enryH/recipe-book)
+- [github.dev/biosustain/recipe-book (Editor)](https://github.dev/biosustain/recipe-book)
+- [github.com/biosustain/recipe-book (Website)](https://github.com/biosustain/recipe-book)
 
 ### In GitHub Workspace
 
@@ -200,9 +200,9 @@ repository.
   remote: error: See https://gh.io/lfs for more information.
   remote: error: File large_text_file.txt is 105.00 MB; this exceeds GitHub's file size limit of 100.00 MB
   remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-  To https://github.com/enryH/recipe-book.git
+  To https://github.com/biosustain/recipe-book.git
   ! [remote rejected] test-lfs -> test-lfs (pre-receive hook declined)
-  error: failed to push some refs to 'https://github.com/enryH/recipe-book.git'
+  error: failed to push some refs to 'https://github.com/biosustain/recipe-book.git'
   ```
 
   As of now git has a built-in support for hinting you at which files are to large to be
