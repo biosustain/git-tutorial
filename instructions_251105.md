@@ -1,7 +1,5 @@
 # Workshop on the 5th of November 2025
 
-
-
 ## How to work with the repository
 
 You need to be logged in to GitHub and have a GitHub account for all these options:
@@ -27,15 +25,18 @@ Please have a look at the (video) tutorials before the course:
 
 You need to be logged in to GitHub and have a GitHub account.
 
-- [github.dev/biosustain/recipe-book (Editor)](https://github.dev/biosustain/recipe-book)
 - [github.com/biosustain/recipe-book (Website)](https://github.com/biosustain/recipe-book)
+- [github.dev/biosustain/recipe-book (Editor)](https://github.dev/biosustain/recipe-book)
 
 ### In GitHub Workspace
 
 - Open in GitHub Codespace if you want to build and preview the website without
   creating a commit:
 
-  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=1053356553&skip_quickstart=true)
+  [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&amp%3Bref=main&amp%3Brepo=1053356553&amp%3Bskip_quickstart=true&skip_quickstart=true&machine=basicLinux32gb&repo=1053356553&ref=main&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=EuropeWest)
+
+> If you start from the `biosustain/recipe-book` repository you can create a codespace,
+> and it will automatically create a fork for you if you don't have write access.
 
 ### On local computer
 
@@ -63,7 +64,18 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 
 <details>
 <summary>See full pass through exercise</summary>
-> ToDo: Make brief video for preperations and as reference
+
+[![GitHub Codespaces & VS Code in the Browser - Video Tutorial](https://img.youtube.com/vi/b3uTxjO7tAc/maxresdefault.jpg)](https://www.youtube.com/watch?v=b3uTxjO7tAc)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b3uTxjO7tAc?si=oRVMYlZtwpZ0iOhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Watch this video for a walkthrough of using GitHub Codespaces and VS Code in the browser.
+
+Additional steps:
+- check out to `main` branch
+- sync `fork/main` with `origin/main` on your fork (on GitHub website of your fork)
+- delete your codespaces afterwards to not use up all your credits: 
+  [Deleting a codespace](https://docs.github.com/en/codespaces/developing-in-a-codespace/deleting-a-codespace#deleting-a-codespace)
 </details>
 
 ### Create a merge conflict [medium]
