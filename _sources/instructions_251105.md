@@ -185,7 +185,7 @@ possible locally, but then the commit cannot be syncronized with the remote, hos
 repository.
 
 - use a large file generating some random large files (e.g. this
-  [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing
+  [one](https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing)
   I created running the Python code below):
 
   ```python
