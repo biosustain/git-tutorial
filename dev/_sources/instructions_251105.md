@@ -65,9 +65,16 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 <details>
 <summary>See full pass through exercise</summary>
 
-[![GitHub Codespaces & VS Code in the Browser - Video Tutorial](https://img.youtube.com/vi/b3uTxjO7tAc/maxresdefault.jpg)](https://www.youtube.com/watch?v=b3uTxjO7tAc)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b3uTxjO7tAc?si=oRVMYlZtwpZ0iOhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+  <iframe src="https://www.youtube.com/embed/b3uTxjO7tAc?si=oRVMYlZtwpZ0iOhx"
+          title="Recording of basic exercise"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+  </iframe>
+</div>
 
 Watch this video for a walkthrough of using GitHub Codespaces and VS Code in the browser.
 
