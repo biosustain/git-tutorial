@@ -53,7 +53,31 @@ as well or instead. Find exercise groups seeing the marks on the tables.
 - [create a fork](https://github.com/biosustain/recipe-book/fork)
   (or request access as collaborator of the the recipe-repo)
 - create a new branch from `main`, e.g. `add-aioli-pasta`
-- create a commit with your new recipe draft
+- create a commit with your new recipe draft using the template
+  <details>
+  <summary>See the recipe template</summary>
+
+  ```markdown
+  # Title
+
+  ## Ingredients
+
+  (For 4 People)
+
+  - ingredient 1
+  - ingredient 2
+
+  ## Instructions
+
+  1. first step
+  2. second step
+
+  ```
+
+  Please make sure to have the headings as shown above for consistency.
+  It will be checked.
+
+  </details>
 - open a Pull (Merge) Request on GitHub to `origin/main`
 - ask someone (by inviting them) to review your PR and get an approval
   - I set-up the repo to require at least one approval before a merge is possible
