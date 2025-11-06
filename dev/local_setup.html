@@ -378,6 +378,20 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <blockquote>
 <div><p>could be added to local config using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">user...</span></code></p>
 </div></blockquote>
+<p>Then you need to define how to handle merge conflicts, in case you have committed
+changes locally and there are changes in the remote repository. The easiest way is to
+always create a merge commit
+(<a class="reference external" href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-pullrebase" rel="noreferrer" target="_blank">docs</a>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pull.rebase<span class="w"> </span><span class="nb">false</span>
+<span class="c1"># or only for this repository</span>
+git<span class="w"> </span>config<span class="w"> </span>--local<span class="w"> </span>pull.rebase<span class="w"> </span><span class="nb">false</span>
+</pre></div>
+</div>
+<p>Setting it to true has a the warning:</p>
+<blockquote>
+<div><p>NOTE: (setting it to true) is a possibly dangerous operation; do not use it unless you understand
+the implications. (see <a class="reference external" href="https://git-scm.com/docs/git-rebase" rel="noreferrer" target="_blank">git-rebase</a> for details)</p>
+</div></blockquote>
 </section>
 </section>
 
