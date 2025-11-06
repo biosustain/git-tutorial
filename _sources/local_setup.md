@@ -16,3 +16,18 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ``` 
 > could be added to local config using `git config user...`
+
+Then you need to define how to handle merge conflicts, in case you have committed 
+changes locally and there are changes in the remote repository. The easiest way is to
+always create a merge commit 
+([docs](https://git-scm.com/docs/git-config#Documentation/git-config.txt-pullrebase)):
+
+```bash
+git config --global pull.rebase false
+# or only for this repository
+git config --local pull.rebase false
+```
+
+Setting it to true has a the warning: 
+> NOTE: (setting it to true) is a possibly dangerous operation; do not use it unless you understand 
+> the implications. (see [git-rebase](https://git-scm.com/docs/git-rebase) for details)

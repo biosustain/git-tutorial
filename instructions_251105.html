@@ -431,20 +431,41 @@ and the command line program <a class="reference external" href="https://git-scm
 as well or instead. Find exercise groups seeing the marks on the tables.</p>
 <section id="add-your-recipe-and-request-a-review-basic">
 <h3>Add your recipe and request a review [basic]<a class="headerlink" href="#add-your-recipe-and-request-a-review-basic" title="Link to this heading">#</a></h3>
-<ul class="simple">
+<ul>
 <li><p><a class="reference external" href="https://github.com/biosustain/recipe-book/fork" rel="noreferrer" target="_blank">create a fork</a>
 (or request access as collaborator of the the recipe-repo)</p></li>
 <li><p>create a new branch from <code class="docutils literal notranslate"><span class="pre">main</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">add-aioli-pasta</span></code></p></li>
-<li><p>create a commit with your new recipe draft</p></li>
+<li><p>create a commit with your new recipe draft using the template</p>
+<details>
+<summary>See the recipe template</summary>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Title</span>
+
+<span class="gu">## Ingredients</span>
+
+(For 4 People)
+
+<span class="k">-</span><span class="w"> </span>ingredient 1
+<span class="k">-</span><span class="w"> </span>ingredient 2
+
+<span class="gu">## Instructions</span>
+
+<span class="k">1.</span> first step
+<span class="k">2.</span> second step
+</pre></div>
+</div>
+<p>Please make sure to have the headings as shown above for consistency.
+It will be checked.</p>
+</details>
+</li>
 <li><p>open a Pull (Merge) Request on GitHub to <code class="docutils literal notranslate"><span class="pre">origin/main</span></code></p></li>
 <li><p>ask someone (by inviting them) to review your PR and get an approval</p>
-<ul>
+<ul class="simple">
 <li><p>I set-up the repo to require at least one approval before a merge is possible
 (best-practice)</p></li>
 </ul>
 </li>
 <li><p>merge the PR into <code class="docutils literal notranslate"><span class="pre">main</span></code> (you can do it yourself after getting the approval)</p>
-<ul>
+<ul class="simple">
 <li><p>check out your options (merge, squash, rebase) and choose one</p></li>
 </ul>
 </li>
