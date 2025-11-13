@@ -241,11 +241,11 @@ repository.
       dtype='<U1')
   mb = 1024*1024
   n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
-  np.random.choice(np.frombuffer(alphabet, dtype='<U1'), n)
+  content = np.random.choice(np.frombuffer(alphabet, dtype='<U1'), n)
 
   with open('large_text_file.txt', 'w') as f:
       for i in range(n):
-          f.write(np.random.choice(alphabet))
+          f.write(content)
   ```
 
 - commit them in a data folder
