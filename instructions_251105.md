@@ -235,12 +235,17 @@ repository.
 
   ```python
   import numpy as np
+
   alphabet = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-       'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
+      'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
       dtype='<U1')
   mb = 1024*1024
   n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
-  np.random.choice(np.fromstring(alphabet, dtype='<U1'), n)
+  np.random.choice(np.frombuffer(alphabet, dtype='<U1'), n)
+
+  with open('large_text_file.txt', 'w') as f:
+      for i in range(n):
+          f.write(np.random.choice(alphabet))
   ```
 
 - commit them in a data folder
