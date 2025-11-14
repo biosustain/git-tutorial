@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Workshop on the 13th of November 2024 &#8212; Git Tutorial  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'instructions_241113';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Git under the hood" href="advanced.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Git Tutorial  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/biosustain/git-tutorial" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Git Tutorial
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basic introduction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="instructions_251105.html">Workshop on the 5th of November 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="use_cases.html">Use cases for git and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local_setup.html">Setup git locally</a></li>
+<li class="toctree-l1"><a class="reference internal" href="receipe_book.html">Recipe Book</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced content</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">Git under the hood</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Workshop on the 13th of November 2024</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/biosustain/git-tutorial" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/instructions_241113.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Workshop on the 13th of November 2024</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan">Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-create-a-shared-repository">1. step - create a shared repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-create-a-clone-of-the-shared-repository">2. step - create a clone of the shared repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-each-create-a-branch">3. step - each create a branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-merge-the-branches-to-the-main-branch">4. step - merge the branches to the main branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-view-and-annotate-the-collaborative-work">5. step - view and annotate the collaborative work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6. step - merge the branches to the main branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-merge-conflicts">7. step - merge conflicts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-up-recording">Follow up recording</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="workshop-on-the-13th-of-november-2024">
+<h1>Workshop on the 13th of November 2024<a class="headerlink" href="#workshop-on-the-13th-of-november-2024" title="Link to this heading">#</a></h1>
+<p>.. at DTU biosustain and DTU bioengineering.</p>
+<p><a class="reference external" href="https://github.com/codespaces/new?hide_repo_select=true&amp;amp;ref=main&amp;amp;repo=874029589&amp;amp;skip_quickstart=true" rel="noreferrer" target="_blank"><img alt="Open in GitHub Codespaces" src="https://github.com/codespaces/badge.svg" /></a></p>
+<section id="plan">
+<h2>Plan<a class="headerlink" href="#plan" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Introduction to git (<a class="reference external" href="https://docs.google.com/presentation/d/1RsKMiKquE4wqncrAv9LEtjivGE_dGiHoJ8nKCxgVKeY/edit?usp=sharing" rel="noreferrer" target="_blank">slides</a>),
+see recording <a class="reference external" href="https://youtu.be/cAU3BCUkHxM" rel="noreferrer" target="_blank">here</a></p></li>
+<li><p>Hands-on, focusing this time on</p>
+<ul>
+<li><p>working on a shared repository (per group, i.e. e.g. per table)</p></li>
+<li><p>creating and merging branches</p></li>
+<li><p>viewing and annotating collaborative work</p></li>
+<li><p>showing features of GitHub</p></li>
+</ul>
+</li>
+</ul>
+<p>If time allows - and maybe due to common errors - we will also cover:</p>
+<ul class="simple">
+<li><p>merge conflicts</p></li>
+<li><p>out-of-sync issues</p></li>
+</ul>
+<p>The workshop will require you to have a GitHub account. Please open it here: <a class="reference external" href="https://github.com/join" rel="noreferrer" target="_blank">github.com/join</a></p>
+<section id="step-create-a-shared-repository">
+<h3>1. step - create a shared repository<a class="headerlink" href="#step-create-a-shared-repository" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>ONLY one person per group has to do this.</p>
+</div></blockquote>
+<p>Per group (e.g. table) create one repository on GitHub on one of the group members account
+or under the DTU biosustain organization.</p>
+<ul class="simple">
+<li><p>Use as template this repository from<br />
+<a class="reference external" href="https://github.com/enryH/notes_template" rel="noreferrer" target="_blank">github.com/enryH/notes_template</a>.
+Follow the instructions described
+<a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template" rel="noreferrer" target="_blank">here</a> or
+<a class="reference external" href="https://youtu.be/XolIezJtSPI?t=98" rel="noreferrer" target="_blank">the demo-recording</a> to use it.</p></li>
+</ul>
+</section>
+<section id="step-create-a-clone-of-the-shared-repository">
+<h3>2. step - create a clone of the shared repository<a class="headerlink" href="#step-create-a-clone-of-the-shared-repository" title="Link to this heading">#</a></h3>
+<p>Now you have a common repository you can share with each others. You can either
+<a class="reference external" href="https://docs.github.com/en/codespaces/developing-in-a-codespace/creating-a-codespace-for-a-repository#creating-a-codespace-for-a-repository" rel="noreferrer" target="_blank">work in a codespace</a>
+(opening the repository in a virtual machine in the browser) or clone the repository
+to your local machine.</p>
+<ul class="simple">
+<li><p>we won’t cover the website aspect of the template here, but I created a video on how
+to use the template for a website <a class="reference external" href="https://www.youtube.com/watch?v=XolIezJtSPI" rel="noreferrer" target="_blank">here</a>
+(which is also linked in the <a class="reference external" href="https://github.com/enryH/notes_template" rel="noreferrer" target="_blank">repository’s README</a>).</p></li>
+</ul>
+</section>
+<section id="step-each-create-a-branch">
+<h3>3. step - each create a branch<a class="headerlink" href="#step-each-create-a-branch" title="Link to this heading">#</a></h3>
+<p>Each of you create a branch, e.g. give it your name. Add a brief description of what you
+are passionate about in a file called <code class="docutils literal notranslate"><span class="pre">aboutme.md</span></code> in a folder with your name.</p>
+<p>In order to commit this to the GitHub repository you have to do one of the two options:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository#inviting-a-collaborator-to-a-personal-repository" rel="noreferrer" target="_blank">add all collaborators</a>
+of your group to the repository (write access)</p></li>
+<li><p>create a fork on your GitHub account (you will be asked in VSCode if you want to do this)</p></li>
+</ul>
+<p>You can also mix both approaches in your group to find out about the differences.</p>
+<blockquote>
+<div><p>You can see how to commit changed files <a class="reference external" href="https://www.youtube.com/watch?v=XolIezJtSPI&amp;amp;t=938s" rel="noreferrer" target="_blank">here</a>
+(in one part of the notes template hands on recording)</p>
+</div></blockquote>
+</section>
+<section id="step-merge-the-branches-to-the-main-branch">
+<h3>4. step - merge the branches to the main branch<a class="headerlink" href="#step-merge-the-branches-to-the-main-branch" title="Link to this heading">#</a></h3>
+<p>On GitHub open a pull request to merge your branch to the main branch. We will explore
+together some features of the pull request website.</p>
+<blockquote>
+<div><p>Hint: Use the extension
+<a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph" rel="noreferrer" target="_blank">Git Graph</a>
+to visualize your branches and the history of your repository.</p>
+</div></blockquote>
+</section>
+<section id="step-view-and-annotate-the-collaborative-work">
+<h3>5. step - view and annotate the collaborative work<a class="headerlink" href="#step-view-and-annotate-the-collaborative-work" title="Link to this heading">#</a></h3>
+<p>Switch back to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch and get all the latest changes from your coworkers (pull).
+Now, each create (again) a new branch (pick a unique new name) and create a the file name <code class="docutils literal notranslate"><span class="pre">biosustain.md</span></code>.
+In this file write a about what you think biosustain is about.</p>
+</section>
+<section id="id1">
+<h3>6. step - merge the branches to the main branch<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>The first pull request will work fine. Everyone else has to deal with merge conflicts, as
+the same named file will be overwritten - and there is no clear way to say which version
+is the correct one or how to combine you changes.</p>
+<ul class="simple">
+<li><p>Hint: In your CodeSpace make sure to checkout the latest changes from the main branch
+before creating a new branch (pull on main).</p></li>
+</ul>
+</section>
+<section id="step-merge-conflicts">
+<h3>7. step - merge conflicts<a class="headerlink" href="#step-merge-conflicts" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>Advanced!</p>
+</div></blockquote>
+<p>We will explore how to resolve merge conflicts in VSCode’s UI. This is advanced and
+you don’t have to do this for now.</p>
+</section>
+</section>
+<section id="follow-up-recording">
+<h2>Follow up recording<a class="headerlink" href="#follow-up-recording" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=mX3Il5xvKAs" rel="noreferrer" target="_blank"><img alt="Live Demo of Hands On part" src="https://img.youtube.com/vi/mX3Il5xvKAs/maxresdefault.jpg" /></a></p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="advanced.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Git under the hood</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plan">Plan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-create-a-shared-repository">1. step - create a shared repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-create-a-clone-of-the-shared-repository">2. step - create a clone of the shared repository</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-each-create-a-branch">3. step - each create a branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-merge-the-branches-to-the-main-branch">4. step - merge the branches to the main branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-view-and-annotate-the-collaborative-work">5. step - view and annotate the collaborative work</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6. step - merge the branches to the main branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-merge-conflicts">7. step - merge conflicts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#follow-up-recording">Follow up recording</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Henry Webel
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, DTU Biosustain, Informatics Platform, DSP.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
