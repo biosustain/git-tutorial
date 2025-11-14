@@ -234,17 +234,19 @@ repository.
   I created running the Python code below):
 
   ```python
-  import numpy as np
+    import numpy as np
 
-  alphabet = np.array(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-      'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
-      dtype='<U1')
-  mb = 1024*1024
-  n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
-  content = np.random.choice(alphabet, n)
+    alphabet = np.array([
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+    ],
+        dtype='<U1')
+    mb = 1024*1024
+    n = 105*mb  # number of random characters to get >100MB so GitHub rejects it
+    content = np.random.choice(np.frombuffer(alphabet, dtype='<U1'), n)
 
-  with open('large_text_file.txt', 'w') as f:
-      f.write(''.join(content))
+    with open('large_text_file.txt', 'w') as f:
+        f.write(''.join(content))
   ```
 
 - commit them in a data folder
