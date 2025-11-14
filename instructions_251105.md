@@ -244,8 +244,7 @@ repository.
   content = np.random.choice(np.frombuffer(alphabet, dtype='<U1'), n)
 
   with open('large_text_file.txt', 'w') as f:
-      for i in range(n):
-          f.write(content)
+      f.write(''.join(content))
   ```
 
 - commit them in a data folder
