@@ -561,20 +561,41 @@ history before merging changes, combining related commits, or removing mistakes.
 <li><p><code class="docutils literal notranslate"><span class="pre">drop</span></code>: Remove the commit.</p></li>
 </ul>
 <p>It will look something similar to this (taken from the tutorial linked above):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pick<span class="w"> </span><span class="m">2231360</span><span class="w"> </span>some<span class="w"> </span>old<span class="w"> </span>commit
-pick<span class="w"> </span>ee2adc2<span class="w"> </span>Adds<span class="w"> </span>new<span class="w"> </span>feature
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pick<span class="w"> </span>1ad9716<span class="w"> </span>Added<span class="w"> </span>brandade<span class="w"> </span>croquettes<span class="w"> </span><span class="o">(</span><span class="c1">#58)</span>
+pick<span class="w"> </span>d5c6d74<span class="w"> </span>:memo:<span class="w"> </span>description
+pick<span class="w"> </span>c55c98c<span class="w"> </span>:art:<span class="w"> </span>enumerate<span class="w"> </span>instructions<span class="w"> </span>as<span class="w"> </span>steps<span class="w"> </span><span class="k">for</span><span class="w"> </span>recipe
+pick<span class="w"> </span>a0b894b<span class="w"> </span>🚧<span class="w"> </span>fix<span class="w"> </span><span class="nb">local</span><span class="w"> </span>git<span class="w"> </span>issues<span class="w"> </span>using<span class="w"> </span>git<span class="w"> </span>mv
 
-
-<span class="c1"># Rebase 2cf755d..ee2adc2 onto 2cf755d (9 commands)</span>
+<span class="c1"># Rebase c0dd3ef..a0b894b onto c0dd3ef (4 commands)</span>
 <span class="c1">#</span>
 <span class="c1"># Commands:</span>
-<span class="c1"># p, pick = use commit</span>
-<span class="c1"># r, reword = use commit, but edit the commit message</span>
-<span class="c1"># e, edit = use commit, but stop for amending</span>
-<span class="c1"># s, squash = use commit, but meld into previous commit</span>
-<span class="c1"># f, fixup = like &quot;squash&quot;, but discard this commit&#39;s log message</span>
-<span class="c1"># x, exec = run command (the rest of the line) using shell</span>
-<span class="c1"># d, drop = remove commit</span>
+<span class="c1"># p, pick &lt;commit&gt; = use commit</span>
+<span class="c1"># r, reword &lt;commit&gt; = use commit, but edit the commit message</span>
+<span class="c1"># e, edit &lt;commit&gt; = use commit, but stop for amending</span>
+<span class="c1"># s, squash &lt;commit&gt; = use commit, but meld into previous commit</span>
+<span class="c1"># f, fixup [-C | -c] &lt;commit&gt; = like &quot;squash&quot; but keep only the previous</span>
+<span class="c1">#                    commit&#39;s log message, unless -C is used, in which case</span>
+<span class="c1">#                    keep only this commit&#39;s message; -c is same as -C but</span>
+<span class="c1">#                    opens the editor</span>
+<span class="c1"># x, exec &lt;command&gt; = run command (the rest of the line) using shell</span>
+<span class="c1"># b, break = stop here (continue rebase later with &#39;git rebase --continue&#39;)</span>
+<span class="c1"># d, drop &lt;commit&gt; = remove commit</span>
+<span class="c1"># l, label &lt;label&gt; = label current HEAD with a name</span>
+<span class="c1"># t, reset &lt;label&gt; = reset HEAD to a label</span>
+<span class="c1"># m, merge [-C &lt;commit&gt; | -c &lt;commit&gt;] &lt;label&gt; [# &lt;oneline&gt;]</span>
+<span class="c1">#         create a merge commit using the original merge commit&#39;s</span>
+<span class="c1">#         message (or the oneline, if no original merge commit was</span>
+<span class="c1">#         specified); use -c &lt;commit&gt; to reword the commit message</span>
+<span class="c1"># u, update-ref &lt;ref&gt; = track a placeholder for the &lt;ref&gt; to be updated</span>
+<span class="c1">#                       to this position in the new commits. The &lt;ref&gt; is</span>
+<span class="c1">#                       updated at the end of the rebase</span>
+<span class="c1">#</span>
+<span class="c1"># These lines can be re-ordered; they are executed from top to bottom.</span>
+<span class="c1">#</span>
+<span class="c1"># If you remove a line here THAT COMMIT WILL BE LOST.</span>
+<span class="c1">#</span>
+<span class="c1"># However, if you remove everything, the rebase will be aborted.</span>
+<span class="c1">#</span>
 </pre></div>
 </div>
 <p>workflow:</p>
@@ -600,13 +621,19 @@ repository.</p>
 <li><p>use a large file generating some random large files (e.g. this
 <a class="reference external" href="https://drive.google.com/drive/folders/1xvYoWVzzgU1mGCG07tvv6V03mR7meC1Q?usp=sharing" rel="noreferrer" target="_blank">one</a>
 I created running the Python code below):</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">alphabet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">],</span>
-    <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U1&#39;</span><span class="p">)</span>
-<span class="n">mb</span> <span class="o">=</span> <span class="mi">1024</span><span class="o">*</span><span class="mi">1024</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">105</span><span class="o">*</span><span class="n">mb</span>  <span class="c1"># number of random characters to get &gt;100MB so GitHub rejects it</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">alphabet</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U1&#39;</span><span class="p">),</span> <span class="n">n</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>  <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+  <span class="n">alphabet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+      <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span>
+  <span class="p">],</span>
+      <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U1&#39;</span><span class="p">)</span>
+  <span class="n">mb</span> <span class="o">=</span> <span class="mi">1024</span><span class="o">*</span><span class="mi">1024</span>
+  <span class="n">n</span> <span class="o">=</span> <span class="mi">105</span><span class="o">*</span><span class="n">mb</span>  <span class="c1"># number of random characters to get &gt;100MB so GitHub rejects it</span>
+  <span class="n">content</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">alphabet</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;&lt;U1&#39;</span><span class="p">),</span> <span class="n">n</span><span class="p">)</span>
+
+  <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;large_text_file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+      <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">content</span><span class="p">))</span>
 </pre></div>
 </div>
 </li>
