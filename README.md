@@ -1,6 +1,9 @@
 # Git Tutorial
 
-Sign-Up to the workshop here (being logged in with your DTU Microsoft account): [Sign-Up Form](https://forms.office.com/e/62H1nV61R0)
+Find the current sign-up links on our trainig page:
+
+- [biosustain.github.io/dsp_notes/trainings](https://biosustain.github.io/dsp_notes/trainings/index.html)
+  (You need to be logged in with your DTU Microsoft account)
 
 ## Announcement
 
@@ -18,8 +21,7 @@ collaboratively work on extending a [recipe book](https://biosustain.github.io/r
 You will learn how to work on
 [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches),
 review [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-and merge them into the main branch. If you have specific requests, feel free to reach out to me.
-
+and merge them into the main branch, helping you to interact with coding agents more confidently.
 If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk) and/or write it down in the sign-up form.
 
 What you'll learn:
@@ -27,9 +29,10 @@ What you'll learn:
 - Basic tasks and actions to perform with git (in VSCode or in the browser)
 - How to branch and tag
 - Follow trunk-based development
-- See how to merge and comment a Pull Request based on a branch
-- Solve merge conflicts
-- Familiarize yourself with VSCode’s and GitHub’s interface and user experience
+- See how to merge and comment a Pull Request based on a branch (and interact with coding agents)
+- Solve merge conflicts (or have them solved by coding agents)
+- Familiarize yourself with VSCode’s and GitHub’s interface and user experience (
+  including the GitHub Codespaces, Agents tab and Copilot Chat)
 - Get to know new recipes
 
 Minimal prerequisite: A [GitHub account](https://github.com/signup).
@@ -41,11 +44,11 @@ If you want to follow along locally, please install
 
 | Time          | Activity                                   |
 | ------------- | ------------------------------------------ |
-| 10:00 - 10:15 | Coffee and snacks 🥐                       |
-| 10:15 - 10:45 | Introduction and example workflow          |
-| 10:45 - 12:00 | Working collaboratively on the recipe book |
-| 12:00 - 12:30 | lunch break (not included)                 |
-| 12:30 - 13:30 | Your question and advanced content         |
+| 09:00 - 09:15 | Coffee and snacks 🥐                       |
+| 09:15 - 09:45 | Introduction and example workflow          |
+| 09:45 - 11:00 | Working collaboratively on the recipe book |
+| 11:00 - 11:30 | lunch break (not included)                 |
+| 11:30 - 12:30 | Your question and advanced content         |
 
 ## Slides
 
