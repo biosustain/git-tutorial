@@ -1,4 +1,4 @@
-# Workshop on the 5th of November 2025
+# Workshop on the 4th of November 2026
 
 ## How to work with the repository
 
