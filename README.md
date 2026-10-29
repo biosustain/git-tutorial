@@ -3,7 +3,6 @@
 Find the current sign-up links on our trainig page:
 
 - [biosustain.github.io/dsp_notes/trainings](https://biosustain.github.io/dsp_notes/trainings/index.html)
-  (You need to be logged in with your DTU Microsoft account)
 
 ## Announcement
 
@@ -42,13 +41,14 @@ If you want to follow along locally, please install
 
 ### Brief timeline of the workshop:
 
-| Time          | Activity                                   |
-| ------------- | ------------------------------------------ |
-| 09:00 - 09:15 | Coffee and snacks 🥐                       |
-| 09:15 - 09:45 | Introduction and example workflow          |
-| 09:45 - 11:00 | Working collaboratively on the recipe book |
-| 11:00 - 11:30 | lunch break (not included)                 |
-| 11:30 - 12:30 | Your question and advanced content         |
+| Time          | Activity                                                       |
+| ------------- | -------------------------------------------------------------- |
+| 09:00 - 09:15 | Coffee and snacks 🥐                                           |
+| 09:15 - 09:45 | Introduction and example workflow                              |
+| 09:45 - 11:00 | Working collaboratively on the recipe book <br> basic exercise |
+| 11:00 - 11:15 | break                                                          |
+| 11:15 - 12:00 | Agentic programming on GitHub, then more exercises             |
+| 12:00 - 12:30 | Your questions (one-on-one)                                    |
 
 ## Slides
 
