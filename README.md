@@ -8,27 +8,30 @@ Find the current sign-up links on our trainig page:
 
 This workshop will give you the opportunity to practice git as a version control system
 and Github as a website to host your repositories. Using git you can track changes in
-folders. It allows you track your progress and to spot random typos when working on
-many projects and tasks in parallel. In the workshop you will get the time to practice
-the fundamental concepts and actions directly in your browser - either using VSCode in
-GitHub Codespaces or in using the GitHub web interface. If you want, you can also try
-everything on your local computer.
+folders. It allows you track your progress and to spot random typos when working on many
+projects and tasks in parallel. In the workshop you will get the time to practice the
+fundamental concepts and actions directly in your browser - either using VSCode in GitHub
+Codespaces or in using the GitHub web interface. If you want, you can also try everything
+on your local computer.
 
-I will give a brief introduction to git. Then you will specific workflows by
-collaboratively work on extending a [recipe book](https://biosustain.github.io/recipe-book/)
-(please bring a recipe you like).
-You will learn how to work on
+I will give a brief introduction to git. Then you will test specific workflows by
+collaboratively working on extending a [recipe
+book](https://biosustain.github.io/recipe-book/) (one you like!). You will learn how to
+work on
 [branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches),
-review [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
-and merge them into the main branch, helping you to interact with coding agents more confidently.
-If you have specific requests, feel free to reach out to [me](mailto:heweb@dtu.dk) and/or write it down in the sign-up form.
+review [Pull
+Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+and merge them into the main branch, helping you to interact with coding agents more
+confidently. If you have specific requests, feel free to reach out to
+[me](mailto:heweb@dtu.dk) and/or write it down in the sign-up form.
 
 What you'll learn:
 
 - Basic tasks and actions to perform with git (in VSCode or in the browser)
 - How to branch and tag
 - Follow trunk-based development
-- See how to merge and comment a Pull Request based on a branch (and interact with coding agents)
+- See how to merge and comment a Pull Request based on a branch (and interact with coding
+  agents)
 - Solve merge conflicts (or have them solved by coding agents)
 - Familiarize yourself with VSCode’s and GitHub’s interface and user experience (
   including the GitHub Codespaces, Agents tab and Copilot Chat)
